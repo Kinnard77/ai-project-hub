@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Odisea Challenge",
+        "status": "Active",
+        "progress": 60,
+        "tech": "HTML/CSS/JS + Node.js Backend",
+        "last_update": "Conectando Backend - Traveler details implementados"
+    },
+    {
+        "id": 2,
+        "name": "Micropasos App",
+        "status": "Planning",
+        "progress": 15,
+        "tech": "Conceptual - Viaje del Héroe",
+        "last_update": "State of the World definido"
+    },
+    {
+        "id": 3,
+        "name": "The AI Project Hub",
+        "status": "Active",
+        "progress": 20,
+        "tech": "React + Vite + Tailwind",
+        "last_update": "Estructura inicial creada"
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Odisea Challenge (Frontend)",
+        "status": "Active",
+        "progress": 90,
+        "tech": "HTML/CSS/JS",
+        "last_update": "Bookings page refactored"
+    },
+    {
+        "id": 2,
+        "name": "Lotería Mexicana",
+        "status": "Active",
+        "progress": 60,
+        "tech": "React",
+        "last_update": "MVP Functional"
+    },
+    {
+        "id": 3,
+        "name": "Iron & Gears",
+        "status": "Active",
+        "progress": 40,
+        "tech": "HTML/Tailwind",
+        "last_update": "Prototipo v1.2"
+    },
+    {
+        "id": 4,
+        "name": "Chronos 1881",
+        "status": "Planning",
+        "progress": 20,
+        "tech": "Godot/Supabase",
+        "last_update": "Concepto y Arquitectura"
+    },
+    {
+        "id": 5,
+        "name": "Micropasos",
+        "status": "Planning",
+        "progress": 15,
+        "tech": "Conceptual",
+        "last_update": "State of the World Pivot"
+    },
+    {
+        "id": 6,
+        "name": "Viajes Backend",
+        "status": "Active",
+        "progress": 70,
+        "tech": "Node/Express/Supabase",
+        "last_update": "Endpoints funcionales"
+    },
+    {
+        "id": 7,
+        "name": "The AI Project Hub",
+        "status": "Active",
+        "progress": 10,
+        "tech": "React/Vite",
+        "last_update": "Initialization"
+    }
+]
