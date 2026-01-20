@@ -12,7 +12,7 @@ git add -A
 git commit -m 'Deploy to GitHub Pages'
 
 # Push to gh-pages branch
-git push -f git@github.com:TU_USUARIO/ai-project-hub.git main:gh-pages
+git push -f git@github.com:Kinnard77/ai-project-hub.git main:gh-pages
 
 cd -
 

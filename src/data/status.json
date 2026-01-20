@@ -22,5 +22,13 @@
         "progress": 20,
         "tech": "React + Vite + Tailwind",
         "last_update": "Estructura inicial creada"
+    },
+    {
+        "id": 4,
+        "name": "Travel Booking UI",
+        "status": "Active",
+        "progress": 85,
+        "tech": "HTML/CSS/JS + Tailwind",
+        "last_update": "Bookings page refactored with traveler details"
     }
 ]

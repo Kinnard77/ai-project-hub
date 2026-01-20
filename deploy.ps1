@@ -9,8 +9,8 @@ git init
 git add -A
 git commit -m 'Deploy to GitHub Pages'
 
-# Push to gh-pages branch (reemplaza TU_USUARIO con tu usuario de GitHub)
-git push -f https://github.com/TU_USUARIO/ai-project-hub.git main:gh-pages
+# Push to gh-pages branch
+git push -f https://github.com/Kinnard77/ai-project-hub.git master:gh-pages
 
 Set-Location ..
 
