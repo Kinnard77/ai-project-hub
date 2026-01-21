@@ -32,12 +32,25 @@
         "last_update": "Concepto y Arquitectura"
     },
     {
-        "id": 5,
-        "name": "Micropasos",
-        "status": "Planning",
-        "progress": 15,
-        "tech": "Conceptual",
-        "last_update": "State of the World Pivot"
+        "id": "micropasos",
+        "name": "Micropasos App",
+        "description": "Identity-based micro-habits tracker with Hero's Journey progression",
+        "progress": 74.42,
+        "status": "active",
+        "phase": "FASE 2: El Oráculo - Intérprete Completado",
+        "lastUpdate": "2026-01-21",
+        "technologies": [
+            "Next.js 14",
+            "Supabase",
+            "TypeScript",
+            "Telegram Bot"
+        ],
+        "highlights": [
+            "✅ FASE 1: Narrative Query Layer (memoria del Oráculo)",
+            "✅ FASE 2: 6 patrones narrativos determinísticos",
+            "🔮 El Oráculo detecta: Sísifo, Fénix, Ícaro, Tortuga, Fantasma, Guerrero",
+            "📊 128/172 tareas completadas"
+        ]
     },
     {
         "id": 6,
