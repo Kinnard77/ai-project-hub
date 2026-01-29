@@ -1,34 +1,263 @@
 [
     {
         "id": 1,
-        "name": "Odisea Challenge",
+        "name": "Odisea Challenge (Frontend)",
         "status": "Active",
-        "progress": 60,
-        "tech": "HTML/CSS/JS + Node.js Backend",
-        "last_update": "Conectando Backend - Traveler details implementados"
+        "theme": "blue",
+        "tech": "React / TS / Fetch",
+        "lastUpdate": "2026-01-29",
+        "description": "Plataforma de acertijos con arquitectura autoritaria (Ruta 2). El backend controla la lógica y validación.",
+        "progressAssisted": 60,
+        "progressAuditable": 60,
+        "assistedPhase": "Producción",
+        "assistedSignals": [
+            "🛡️ Arquitectura Autoritaria establecida",
+            "🧠 Progresión narrativa por estados funcional",
+            "📱 Interfaz optimizada para iPad"
+        ],
+        "tasksSource": "../OdiseaChallenge/tasks.md",
+        "tasksSummary": {
+            "total": 5,
+            "done": 3,
+            "pending": 2
+        },
+        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\OdiseaChallenge\\tasks.md",
+        "pendingFocus": [
+            "Sistema de progresión ANOMALY -> REVELATION",
+            "Optimización para iPad (Safari Mobile)"
+        ],
+        "owner": "Jorge Bonilla/IF&IF Studio 2026"
     },
     {
         "id": 2,
-        "name": "Micropasos App",
-        "status": "Planning",
-        "progress": 15,
-        "tech": "Conceptual - Viaje del Héroe",
-        "last_update": "State of the World definido"
+        "name": "Lotería Mexicana",
+        "status": "Active",
+        "theme": "pink",
+        "tech": "React",
+        "lastUpdate": "2026-01-15",
+        "description": "Juego de Lotería tradicional con animaciones y voz.",
+        "progressAssisted": 60,
+        "progressAuditable": null,
+        "assistedPhase": "Producción",
+        "assistedSignals": [
+            "Tablero funcional al 100%",
+            "Lógica de mazo al 80%",
+            "Integración de voz completada"
+        ],
+        "tasksSource": null,
+        "tasksSummary": null,
+        "pendingTop": null
     },
     {
         "id": 3,
-        "name": "The AI Project Hub",
+        "name": "Iron & Gears",
         "status": "Active",
-        "progress": 20,
-        "tech": "React + Vite + Tailwind",
-        "last_update": "Estructura inicial creada"
+        "theme": "amber",
+        "tech": "HTML/Tailwind",
+        "lastUpdate": "2026-01-10",
+        "description": "Ecommerce de refacciones industriales.",
+        "progressAssisted": 40,
+        "progressAuditable": null,
+        "assistedPhase": "Producción",
+        "assistedSignals": [
+            "Diseño UI base finalizado",
+            "Catálogo en carga de datos",
+            "Estructura Tailwind optimizada"
+        ],
+        "tasksSource": null,
+        "tasksSummary": null,
+        "pendingTop": null
     },
     {
         "id": 4,
+        "name": "Chronos 1881",
+        "status": "Planning",
+        "theme": "orange",
+        "tech": "Godot/Supabase",
+        "lastUpdate": "2026-01-05",
+        "description": "RPG de viajes en el tiempo.",
+        "progressAssisted": 20,
+        "progressAuditable": null,
+        "assistedPhase": "Planeación",
+        "assistedSignals": [
+            "Definición de personajes en proceso",
+            "Prototipo de guardado funcional",
+            "Concept Art inicial terminado"
+        ],
+        "tasksSource": null,
+        "tasksSummary": null,
+        "pendingTop": null
+    },
+    {
+        "id": 5,
+        "name": "Micropasos App",
+        "status": "Active",
+        "theme": "indigo",
+        "tech": "Next.js 14 / Supabase",
+        "lastUpdate": "2026-01-28",
+        "description": "Identity-based micro-habits tracker with Hero's Journey progression.",
+        "progressAssisted": 75,
+        "progressAuditable": 60.1,
+        "assistedPhase": "Producción",
+        "assistedSignals": [
+            "✅ FASE 2 Finalizada con Voces del Oráculo",
+            "🔮 Lógica de Séquito y Fragilidad activa",
+            "📈 Gestión de estados de identidad funcional"
+        ],
+        "tasksSource": "../Micropasos App/micropasos---app/tasks.md",
+        "tasksSummary": {
+            "total": 208,
+            "done": 125,
+            "pending": 83
+        },
+        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\Micropasos App\\micropasos---app\\tasks.md",
+        "pendingFocus": [
+            "Password reset/recovery flow",
+            "Email verification handling",
+            "Optimistic UI updates for better UX"
+        ],
+        "owner": "Jorge Bonilla/IF&IF Studio 2026"
+    },
+    {
+        "id": 6,
+        "name": "Viajes Backend",
+        "status": "Active",
+        "theme": "slate",
+        "tech": "Node/Express/Supabase",
+        "lastUpdate": "2026-01-19",
+        "description": "API y Base de Datos para gestión de viajes.",
+        "progressAssisted": 70,
+        "progressAuditable": null,
+        "assistedPhase": "Integración",
+        "assistedSignals": [
+            "Endpoints de reserva seguros",
+            "Integración Supabase estable",
+            "Middleware de validación operativo"
+        ],
+        "tasksSource": null,
+        "tasksSummary": null,
+        "pendingTop": null
+    },
+    {
+        "id": 7,
+        "name": "The AI Project Hub",
+        "status": "Active",
+        "theme": "violet",
+        "tech": "React / Vite / Tailwind",
+        "lastUpdate": "2026-01-28",
+        "description": "Dashboard central de proyectos para el iPad del Usuario.",
+        "progressAssisted": 90,
+        "progressAuditable": 0,
+        "assistedPhase": "Cierre",
+        "assistedSignals": [
+            "🌌 Estética Dark/Violet finalizada",
+            "🔍 Arquitectura de Doble Capa operativa",
+            "🔢 Sincronización determinista ESM activa"
+        ],
+        "tasksSource": "tasks.md",
+        "tasksSummary": {
+            "total": 0,
+            "done": 0,
+            "pending": 0
+        },
+        "tasksSourceResolved": null,
+        "pendingFocus": [],
+        "owner": "Jorge Bonilla/IF&IF Studio 2026"
+    },
+    {
+        "id": 8,
         "name": "Travel Booking UI",
         "status": "Active",
-        "progress": 85,
+        "theme": "rose",
         "tech": "HTML/CSS/JS + Tailwind",
-        "last_update": "Bookings page refactored with traveler details"
+        "lastUpdate": "2026-01-20",
+        "description": "Interfaz premium para reserva de viajes.",
+        "progressAssisted": 85,
+        "progressAuditable": null,
+        "assistedPhase": "Producción",
+        "assistedSignals": [
+            "UI Hero Section terminada",
+            "Integración de mapas establecida",
+            "Animaciones de transición fluidas"
+        ],
+        "tasksSource": null,
+        "tasksSummary": null,
+        "pendingTop": null
+    },
+    {
+        "id": 9,
+        "name": "RiddleSphere: Neon Challenge",
+        "status": "Active",
+        "theme": "neon",
+        "tech": "React 19 / TS / Tailwind",
+        "lastUpdate": "2026-01-21",
+        "description": "Futuristic Cyberpunk riddle platform for Street Games. High-contrast UI with CRT effects and neon glow.",
+        "progressAssisted": 65,
+        "progressAuditable": null,
+        "assistedPhase": "Integración",
+        "assistedSignals": [
+            "CRT Effect shader implementado",
+            "Supabase Auth activo",
+            "Lógica de acertijos aleatorios funcional"
+        ],
+        "tasksSource": null,
+        "tasksSummary": null,
+        "pendingTop": null
+    },
+    {
+        "id": 10,
+        "name": "Agente Operativo: Arquitecto Silencioso",
+        "status": "Active",
+        "theme": "slate",
+        "tech": "Node / TS / Operative Architecture",
+        "lastUpdate": "2026-01-29",
+        "description": "Sistema de gestión de itinerarios con rigor determinista y validación dual (Planeación/Certificación).",
+        "progressAssisted": 50,
+        "progressAuditable": 50,
+        "assistedPhase": "Producción",
+        "assistedSignals": [
+            "🤫 Arquitectura de Silencio Operacional activa",
+            "🛡️ Motor de validación dual certificado",
+            "📂 Gestión descentralizada establecida"
+        ],
+        "tasksSource": "../AgenteOperativo/tasks.md",
+        "tasksSummary": {
+            "total": 8,
+            "done": 4,
+            "pending": 4
+        },
+        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\AgenteOperativo\\tasks.md",
+        "pendingFocus": [
+            "Definir Arquitectura + SQL Supabase",
+            "Definir Rutas y Endpoints",
+            "Diagramar flujo móvil"
+        ],
+        "owner": "Jorge Bonilla/IF&IF Studio 2026"
+    },
+    {
+        "id": 11,
+        "name": "The AI Project Hub (Muestra)",
+        "status": "Active",
+        "theme": "violet",
+        "tech": "React / Vite / Tailwind",
+        "lastUpdate": "2026-01-29",
+        "description": "Dashboard central de proyectos para el iPad del Usuario.",
+        "progressAssisted": 85,
+        "progressAuditable": 100,
+        "assistedPhase": "Cierre",
+        "assistedSignals": [
+            "🌌 Estética Dark/Violet finalizada",
+            "🔍 Arquitectura de Doble Capa operativa",
+            "🔢 Sync determinista integrado (pendiente de certificar)",
+            "📱 Pendiente pase de performance móvil"
+        ],
+        "tasksSource": "tasks.md",
+        "tasksSummary": {
+            "total": 6,
+            "done": 6,
+            "pending": 0
+        },
+        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\The AI Projects Hub App\\tasks.md",
+        "pendingFocus": []
     }
 ]
