@@ -20,7 +20,7 @@ interface ProjectConfig {
 const PROJECTS: ProjectConfig[] = [
     { id: 1, name: "Odisea Challenge (Frontend)", tasksPath: "../../OdiseaChallenge/tasks.md" },
     { id: 5, name: "Micropasos App", tasksPath: "../../Micropasos App/micropasos---app/tasks.md" },
-    { id: 7, name: "The AI Project Hub", tasksPath: "./tasks.md" }, // Auto-reference
+    { id: 7, name: "The AI Project Hub", tasksPath: "../tasks.md" }, // Auto-reference
     { id: 10, name: "Agente Operativo: Arquitecto Silencioso", tasksPath: "../../AgenteOperativo/tasks.md" }
 ];
 
