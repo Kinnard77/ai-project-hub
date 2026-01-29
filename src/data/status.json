@@ -261,29 +261,6 @@
         "pendingFocus": []
     },
     {
-        "id": 14,
-        "name": "The AI Projects Hub App",
-        "status": "Planning",
-        "theme": "violet",
-        "tech": "TBD",
-        "lastUpdate": "2026-01-28",
-        "description": "Proyecto detectado automáticamente. Pendiente de definición por el Arquitecto.",
-        "owner": "Jorge Bonilla/IF&IF Studio 2026",
-        "progressAssisted": 0,
-        "progressAuditable": null,
-        "assistedPhase": "Planeación",
-        "assistedSignals": [
-            "🧭 Auto-discovery: proyecto detectado. Pendiente autorización del Arquitecto."
-        ],
-        "tasksSource": "../The AI Projects Hub App/tasks.md",
-        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\The AI Projects Hub App\\tasks.md",
-        "tasksSummary": null,
-        "pendingFocus": [
-            "Definir objetivo",
-            "Autorizar tasks (tasks.md)"
-        ]
-    },
-    {
         "id": 15,
         "name": "UMBRA",
         "status": "Planning",
