@@ -1,8 +1,12 @@
-# Tasks: The AI Project Hub
+# Tasks — The AI Project Hub (FASE 2 — ACTIVA)
 
-- [x] Consolidar estructura de archivos
-- [x] Implementar Double Layer (Dashboard + Detalle)
-- [x] Diseño estético Violet/Dark
-- [x] Definir contrato de sincronización determinista
-- [x] Implementar script de sync ESM (sync_status_from_tasks.js)
-- [x] Auditar progreso de 4 proyectos principales
+> AUTORIZADO POR EL ARQUITECTO  
+> Owner: Jorge Bonilla / IF&IF Studio 2026  
+> Estado: Producción / Gobierno
+
+- [ ] Automatizar deploy a GitHub Pages con GitHub Actions
+- [ ] Validar workflow de deploy (Node 22 + Vite + dist)
+- [ ] Documentar política anti-duplicados de proyectos
+- [ ] Definir reglas formales de “qué es un proyecto” en el HUB
+- [ ] Afinar auto-discovery (carpetas vs proyectos reales)
+- [ ] Revisar y certificar tareas de UMBRA (P0 / P1)

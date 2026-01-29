@@ -147,7 +147,7 @@
         "lastUpdate": "2026-01-29",
         "description": "Dashboard central de proyectos para el iPad del Usuario.",
         "progressAssisted": 90,
-        "progressAuditable": 100,
+        "progressAuditable": 0,
         "assistedPhase": "Cierre",
         "assistedSignals": [
             "🌌 Estética Dark/Violet finalizada",
@@ -157,8 +157,8 @@
         "tasksSource": "tasks.md",
         "tasksSummary": {
             "total": 6,
-            "done": 6,
-            "pending": 0
+            "done": 0,
+            "pending": 6
         },
         "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\The AI Projects Hub App\\tasks.md",
         "pendingFocus": [],
