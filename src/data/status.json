@@ -235,32 +235,6 @@
         "owner": "Jorge Bonilla/IF&IF Studio 2026"
     },
     {
-        "id": 11,
-        "name": "The AI Project Hub (Muestra)",
-        "status": "Active",
-        "theme": "violet",
-        "tech": "React / Vite / Tailwind",
-        "lastUpdate": "2026-01-29",
-        "description": "Dashboard central de proyectos para el iPad del Usuario.",
-        "progressAssisted": 85,
-        "progressAuditable": 100,
-        "assistedPhase": "Cierre",
-        "assistedSignals": [
-            "🌌 Estética Dark/Violet finalizada",
-            "🔍 Arquitectura de Doble Capa operativa",
-            "🔢 Sync determinista integrado (pendiente de certificar)",
-            "📱 Pendiente pase de performance móvil"
-        ],
-        "tasksSource": "tasks.md",
-        "tasksSummary": {
-            "total": 6,
-            "done": 6,
-            "pending": 0
-        },
-        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\The AI Projects Hub App\\tasks.md",
-        "pendingFocus": []
-    },
-    {
         "id": 15,
         "name": "UMBRA",
         "status": "Planning",
