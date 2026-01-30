@@ -7,7 +7,10 @@
         "dev": "vite",
         "build": "vite build",
         "lint": "eslint .",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "context:gen": "npx tsx scripts/generate_context_pack.ts",
+        "registry:check": "npx tsx scripts/registry_validate.ts",
+        "pages:verify": "powershell -ExecutionPolicy Bypass -File scripts/verify_pages_bundle.ps1"
     },
     "dependencies": {
         "react": "^18.3.1",

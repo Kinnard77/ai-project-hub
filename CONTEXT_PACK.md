@@ -8,7 +8,7 @@ Contexto:
 Proyecto activo ahora:
 - ID: HUB-007
 - Nombre: The AI Project Hub (OFICIAL)
-- Estado: FASE 2 activa (Auditable 0%)
+- Estado: Cierre (Auditable 0%)
 - Regla: IDs canónicos. Un proyecto existe cuando tiene ID + project.md (+ tasks.md si aplica)
 
 Relación importante:
@@ -19,3 +19,5 @@ Relación importante:
 Qué necesito lograr en este chat:
 - (1) …
 - (2) …
+
+_(Generado automáticamente el 2026-01-30T08:40:48.699Z)_
