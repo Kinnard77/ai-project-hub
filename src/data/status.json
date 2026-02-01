@@ -210,10 +210,10 @@
         "status": "Active",
         "theme": "slate",
         "tech": "Node / TS / Operative Architecture",
-        "lastUpdate": "2026-01-29",
+        "lastUpdate": "2026-01-31",
         "description": "Sistema de gestión de itinerarios con rigor determinista y validación dual (Planeación/Certificación).",
         "progressAssisted": 50,
-        "progressAuditable": 50,
+        "progressAuditable": 62.5,
         "assistedPhase": "Producción",
         "assistedSignals": [
             "🤫 Arquitectura de Silencio Operacional activa",
@@ -223,8 +223,8 @@
         "tasksSource": "../AgenteOperativo/tasks.md",
         "tasksSummary": {
             "total": 8,
-            "done": 4,
-            "pending": 4
+            "done": 5,
+            "pending": 3
         },
         "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\AgenteOperativo\\tasks.md",
         "pendingFocus": [
