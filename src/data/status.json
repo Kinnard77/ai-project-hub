@@ -290,23 +290,29 @@
         "status": "Planning",
         "theme": "violet",
         "tech": "TBD",
-        "lastUpdate": "2026-01-28",
-        "description": "Proyecto detectado automáticamente. Pendiente de definición por el Arquitecto.",
+        "lastUpdate": "2026-02-01",
+        "description": "Street Game iniciático en catedrales reales. Presencia física obligatoria.",
         "owner": "Jorge Bonilla/IF&IF Studio 2026",
-        "progressAssisted": 0,
-        "progressAuditable": null,
+        "progressAssisted": 10,
+        "progressAuditable": 20,
         "assistedPhase": "Planeación",
         "assistedSignals": [
-            "🧭 Auto-discovery: proyecto detectado. Pendiente autorización del Arquitecto."
+            "✅ Proyecto autorizado en PROJECT_REGISTRY",
+            "📄 project.md definido con alcance P0",
+            "🎯 Primer paso: Creator Tool"
         ],
         "humanContext": {
-            "summary": "Proyecto nuevo que fue detectado automáticamente en tus carpetas. Aún no tiene definición ni propósito.",
-            "nextStep": "Decidir si este proyecto vale la pena desarrollarlo o no.",
-            "nextStepWhy": "Sin saber qué va a hacer, no tiene sentido invertir tiempo en él. Es una pregunta simple: ¿esto me interesa o no?"
+            "summary": "Un Street Game que ocurre en catedrales reales. El jugador tiene que estar físicamente ahí. No resuelve acertijos — atraviesa experiencias que cambian cómo percibe el espacio. Hay tensión que se acumula y un momento clímax al final. Tú eres el autor que diseña cada experiencia.",
+            "nextStep": "Diseñar la Creator Tool: la herramienta que tú vas a usar para crear la experiencia de cada catedral.",
+            "nextStepWhy": "Sin esta herramienta no puede avanzar nada más. Es el punto de partida de todo. Primero necesitas poder crear experiencias, después viene todo lo demás."
         },
         "tasksSource": "../UMBRA/tasks.md",
         "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\UMBRA\\tasks.md",
-        "tasksSummary": null,
+        "tasksSummary": {
+            "total": 5,
+            "done": 1,
+            "pending": 4
+        },
         "pendingFocus": [
             "Definir objetivo",
             "Autorizar tasks (tasks.md)"
