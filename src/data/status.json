@@ -345,7 +345,7 @@
         "lastUpdate": "2026-02-01",
         "description": "Sistema de gestión de itinerarios con rigor determinista y validación dual (Planeación/Certificación).",
         "progressAssisted": 50,
-        "progressAuditable": 62.5,
+        "progressAuditable": 75,
         "assistedPhase": "Producción",
         "assistedSignals": [
             "🤫 Arquitectura de Silencio Operacional activa",
@@ -360,12 +360,11 @@
         "tasksSource": "../AgenteOperativo/tasks.md",
         "tasksSummary": {
             "total": 8,
-            "done": 5,
-            "pending": 3
+            "done": 6,
+            "pending": 2
         },
         "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\AgenteOperativo\\tasks.md",
         "pendingFocus": [
-            "Definir Rutas y Endpoints",
             "Diagramar flujo móvil",
             "Validar Plan de Implementación"
         ],
