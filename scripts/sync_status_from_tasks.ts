@@ -151,6 +151,7 @@ function sync() {
             progressAuditable: project.progressAuditable ?? null,
             tasksSummary: project.tasksSummary ?? null,
             tasksSourceResolved: project.tasksSourceResolved ?? null,
+            pendingFocus: project.pendingFocus ?? null,
             lastUpdate: project.lastUpdate
         };
 
@@ -190,13 +191,15 @@ function sync() {
             progressAuditable: project.progressAuditable ?? null,
             tasksSummary: project.tasksSummary ?? null,
             tasksSourceResolved: project.tasksSourceResolved ?? null,
+            pendingFocus: project.pendingFocus ?? null,
             lastUpdate: project.lastUpdate
         };
 
         const changed =
             JSON.stringify(before.progressAuditable) !== JSON.stringify(after.progressAuditable) ||
             JSON.stringify(before.tasksSummary) !== JSON.stringify(after.tasksSummary) ||
-            JSON.stringify(before.tasksSourceResolved) !== JSON.stringify(after.tasksSourceResolved);
+            JSON.stringify(before.tasksSourceResolved) !== JSON.stringify(after.tasksSourceResolved) ||
+            JSON.stringify(before.pendingFocus) !== JSON.stringify(after.pendingFocus);
 
         if (changed) {
             project.lastUpdate = todayYYYYMMDD();

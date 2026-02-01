@@ -10,9 +10,11 @@
         "preview": "vite preview",
         "context:gen": "npx tsx scripts/generate_context_pack.ts",
         "registry:check": "npx tsx scripts/registry_validate.ts",
-        "pages:verify": "powershell -ExecutionPolicy Bypass -File scripts/verify_pages_bundle.ps1"
+        "pages:verify": "powershell -ExecutionPolicy Bypass -File scripts/verify_pages_bundle.ps1",
+        "deploy": "powershell -ExecutionPolicy Bypass -File scripts/deploy.ps1"
     },
     "dependencies": {
+        "@supabase/supabase-js": "^2.93.3",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
     },
