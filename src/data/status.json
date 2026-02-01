@@ -266,9 +266,9 @@
             "📂 Gestión descentralizada establecida"
         ],
         "humanContext": {
-            "summary": "Un sistema que organiza itinerarios de forma automática y verifica que todo esté correcto antes de confirmar. Como un asistente que revisa todo dos veces. Ya tiene la estructura de la base de datos lista con dos tablas principales: una para los itinerarios y otra para los transportistas.",
-            "nextStep": "Definir las rutas y endpoints: es decir, los puntos de entrada que conectan la app móvil con la base de datos.",
-            "nextStepWhy": "La base de datos ya sabe guardar los datos. Ahora necesita saber cómo recibir y entregar esa información cuando la app la pida. Sin esto, la app puede existir pero no puede hablar con los datos."
+            "summary": "Arquitectura de base de datos definida. El sistema usa un modelo híbrido: SQL para búsquedas rápidas (estado, fecha, ruta) y JSONB para la flexibilidad del itinerario complejo.",
+            "nextStep": "Implementar los Endpoints en Node.js para conectar esta base de datos con el Agente.",
+            "nextStepWhy": "Ahora que sabemos CÓMO guardar los datos, necesitamos el CÓDIGO que realmente los guarde y los lea."
         },
         "tasksSource": "../AgenteOperativo/tasks.md",
         "tasksSummary": {
@@ -278,9 +278,9 @@
         },
         "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\AgenteOperativo\\tasks.md",
         "pendingFocus": [
-            "Definir Arquitectura + SQL Supabase",
             "Definir Rutas y Endpoints",
-            "Diagramar flujo móvil"
+            "Diagramar flujo móvil",
+            "Validar Plan de Implementación"
         ],
         "owner": "Jorge Bonilla/IF&IF Studio 2026"
     },
