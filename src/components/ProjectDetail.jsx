@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { supabase } from '../supabaseClient';
 
 const ProjectDetail = ({ project, onBack }) => {
     const theme = project.theme || 'indigo';
@@ -81,6 +82,54 @@ const ProjectDetail = ({ project, onBack }) => {
 
     const cfg = themeConfig[theme] || themeConfig.indigo;
 
+    const [authorizations, setAuthorizations] = useState({});
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        async function fetchAuthorizations() {
+            try {
+                const { data } = await supabase
+                    .from('task_authorizations')
+                    .select('task_name, authorized')
+                    .eq('project_id', project.id);
+                const map = {};
+                if (data) data.forEach(row => { map[row.task_name] = row.authorized; });
+                setAuthorizations(map);
+            } catch (e) {
+                console.warn('Supabase auth fetch failed:', e);
+            }
+            setLoading(false);
+        }
+        fetchAuthorizations();
+    }, [project.id]);
+
+    async function toggleAuthorization(taskName) {
+        const current = authorizations[taskName] || false;
+        const next = !current;
+        setAuthorizations(prev => ({ ...prev, [taskName]: next }));
+        try {
+            const { data } = await supabase
+                .from('task_authorizations')
+                .select('id')
+                .eq('project_id', project.id)
+                .eq('task_name', taskName)
+                .single();
+            if (data) {
+                await supabase
+                    .from('task_authorizations')
+                    .update({ authorized: next, authorized_at: next ? new Date().toISOString() : null })
+                    .eq('id', data.id);
+            } else {
+                await supabase
+                    .from('task_authorizations')
+                    .insert({ project_id: project.id, task_name: taskName, authorized: next, authorized_at: next ? new Date().toISOString() : null });
+            }
+        } catch (e) {
+            console.warn('Supabase auth write failed:', e);
+            setAuthorizations(prev => ({ ...prev, [taskName]: current }));
+        }
+    }
+
     return (
         <div className={`max-w-4xl mx-auto rounded-2xl shadow-2xl overflow-hidden border animate-in fade-in zoom-in duration-300 ${cfg.bg} ${cfg.border} ${cfg.text}`}>
             <div className={`p-8 relative overflow-hidden ${cfg.header}`}>
@@ -148,11 +197,38 @@ const ProjectDetail = ({ project, onBack }) => {
                         </div>
                     </div>
 
-                    <div className="pt-6 border-t border-white/5 opacity-80">
-                        <p className={`text-sm italic leading-relaxed ${cfg.desc}`}>
-                            {project.description}
-                        </p>
-                    </div>
+                    {/* Human Context: En palabras sencillas */}
+                    {project.humanContext && (
+                        <div className="pt-6 border-t border-white/5">
+                            <h4 className={`text-[9px] uppercase font-black tracking-[0.2em] mb-4 ${cfg.accent}`}>
+                                💡 En palabras sencillas
+                            </h4>
+
+                            <p className={`text-sm leading-relaxed mb-4 ${cfg.desc}`}>
+                                {project.humanContext.summary}
+                            </p>
+
+                            {project.humanContext.nextStep && (
+                                <div className="space-y-3">
+                                    <div className={`rounded-xl p-4 border bg-amber-500/5 border-amber-500/20`}>
+                                        <p className="text-[9px] uppercase font-bold text-amber-400/70 tracking-widest mb-2">Foco ahora</p>
+                                        <p className="text-sm text-slate-200 font-medium leading-relaxed">
+                                            {project.humanContext.nextStep}
+                                        </p>
+                                    </div>
+
+                                    {project.humanContext.nextStepWhy && (
+                                        <div className={`rounded-xl p-4 border bg-white/[0.03] border-white/10`}>
+                                            <p className="text-[9px] uppercase font-bold text-slate-500 tracking-widest mb-2">Por qué importa</p>
+                                            <p className="text-xs text-slate-400 leading-relaxed">
+                                                {project.humanContext.nextStepWhy}
+                                            </p>
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+                        </div>
+                    )}
                 </div>
 
                 {/* Section 2: Auditable (Tareas) */}
@@ -177,17 +253,28 @@ const ProjectDetail = ({ project, onBack }) => {
                                 </div>
 
                                 <div className="space-y-4">
-                                    <p className="text-[9px] uppercase font-bold opacity-40 tracking-widest">Foco Actual</p>
+                                    <p className="text-[9px] uppercase font-bold opacity-40 tracking-widest">Tareas Pendientes</p>
                                     <div className="space-y-2">
                                         {project.pendingFocus && project.pendingFocus.length > 0 ? (
-                                            project.pendingFocus.map((task, idx) => (
-                                                <div key={idx} className="rounded-lg p-3 bg-white/5 border border-white/10 flex items-center gap-3">
-                                                    <div className="w-1.5 h-1.5 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.5)]"></div>
-                                                    <span className="text-xs text-slate-300 font-medium">{task}</span>
-                                                </div>
-                                            ))
+                                            project.pendingFocus.map((task, idx) => {
+                                                const isAuthorized = authorizations[task] || false;
+                                                return (
+                                                    <div key={idx} className={`rounded-lg p-3 border flex items-center justify-between transition-colors duration-200 ${isAuthorized ? 'bg-emerald-500/10 border-emerald-500/30' : 'bg-white/5 border-white/10'}`}>
+                                                        <div className="flex items-center gap-3 flex-1 min-w-0">
+                                                            <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${isAuthorized ? 'bg-emerald-400 shadow-[0_0_8px_rgba(34,197,94,0.5)]' : 'bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.5)]'}`}></div>
+                                                            <span className={`text-xs font-medium truncate ${isAuthorized ? 'text-emerald-300' : 'text-slate-300'}`}>{task}</span>
+                                                        </div>
+                                                        <button
+                                                            onClick={() => toggleAuthorization(task)}
+                                                            className={`flex-shrink-0 ml-3 px-2.5 py-1 rounded text-[9px] font-black uppercase tracking-widest border transition-all duration-200 ${isAuthorized ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/10' : 'bg-amber-500/10 text-amber-400 border-amber-500/30 hover:bg-amber-500/20'}`}
+                                                        >
+                                                            {loading ? '...' : isAuthorized ? '✓ Autorizada' : 'Autorizar'}
+                                                        </button>
+                                                    </div>
+                                                );
+                                            })
                                         ) : (
-                                            <p className="text-xs text-emerald-400 italic">No hay tareas pendientes declaradas.</p>
+                                            <p className="text-xs text-emerald-400 italic">No hay tareas pendientes.</p>
                                         )}
                                     </div>
                                 </div>

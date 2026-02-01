@@ -9,6 +9,7 @@ const __dirname = path.dirname(__filename);
 interface TaskCounts {
     total: number;
     done: number;
+    pendingTasks: string[];
 }
 
 interface ProjectConfig {
@@ -21,7 +22,8 @@ const PROJECTS: ProjectConfig[] = [
     { id: 1, name: "Odisea Challenge (Frontend)", tasksPath: "../../OdiseaChallenge/tasks.md" },
     { id: 5, name: "Micropasos App", tasksPath: "../../Micropasos App/micropasos---app/tasks.md" },
     { id: 7, name: "The AI Project Hub", tasksPath: "../tasks.md" }, // Auto-reference
-    { id: 10, name: "Agente Operativo: Arquitecto Silencioso", tasksPath: "../../AgenteOperativo/tasks.md" }
+    { id: 10, name: "Agente Operativo: Arquitecto Silencioso", tasksPath: "../../AgenteOperativo/tasks.md" },
+    { id: 15, name: "UMBRA", tasksPath: "../../UMBRA/tasks.md" }
 ];
 
 const OWNER_CANON = "Jorge Bonilla/IF&IF Studio 2026";
@@ -51,16 +53,22 @@ function parseTasksMd(filePath: string): TaskCounts | null {
 
     let total = 0;
     let done = 0;
+    const pendingTasks: string[] = [];
 
     for (const line of lines) {
         const trimmed = line.trim();
         if (trimmed.startsWith("- [ ]") || trimmed.startsWith("- [x]") || trimmed.startsWith("- [/]")) {
             total++;
-            if (trimmed.startsWith("- [x]")) done++;
+            if (trimmed.startsWith("- [x]")) {
+                done++;
+            } else {
+                const taskName = trimmed.replace(/^- \[[ x\/]\] /, "").trim();
+                pendingTasks.push(taskName);
+            }
         }
     }
 
-    return { total, done };
+    return { total, done, pendingTasks };
 }
 
 function round2(n: number): number {
@@ -173,6 +181,7 @@ function sync() {
                 const pending = total - done;
                 project.tasksSummary = { total, done, pending };
                 project.progressAuditable = round2((done / total) * 100);
+                project.pendingFocus = counts.pendingTasks;
             }
             project.tasksSourceResolved = absTasksPath;
         }
