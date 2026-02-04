@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { Compass, ClipboardCheck, Lightbulb } from 'lucide-react';
 
 const ProjectCard = ({ project, onClick }) => {
     const theme = project.theme || 'indigo';
@@ -63,7 +65,12 @@ const ProjectCard = ({ project, onClick }) => {
     const cfg = themeConfig[theme] || themeConfig.indigo;
 
     return (
-        <div
+        <motion.div
+            variants={{
+                hidden: { opacity: 0, y: 20 },
+                show: { opacity: 1, y: 0 }
+            }}
+            whileHover={{ y: -5, scale: 1.02, transition: { type: "spring", stiffness: 300 } }}
             onClick={onClick}
             className={`group cursor-pointer rounded-2xl p-6 border relative overflow-hidden ${cfg.bg} ${cfg.border} ${cfg.hoverBorder} transition-colors duration-200`}
         >
@@ -92,7 +99,9 @@ const ProjectCard = ({ project, onClick }) => {
                 {/* Layer A: Asistido */}
                 <div>
                     <div className="flex justify-between text-sm mb-1.5 leading-none">
-                        <span className={`font-bold uppercase text-[9px] tracking-[0.2em] ${cfg.subtext}`}>🧭 Asistido</span>
+                        <span className={`flex items-center gap-1.5 font-bold uppercase text-[9px] tracking-[0.2em] ${cfg.subtext}`}>
+                            <Compass strokeWidth={1.5} className={`w-6 h-6 ${cfg.bar.replace('bg-', 'text-')}`} /> Asistido
+                        </span>
                         <span className={`font-black text-xs ${cfg.text}`}>{project.progressAssisted}%</span>
                     </div>
                     <div className={`w-full rounded-full h-3 ${cfg.barBg}`}>
@@ -107,7 +116,9 @@ const ProjectCard = ({ project, onClick }) => {
                 <div>
                     <div className="flex justify-between text-sm mb-1.5 leading-none">
                         <div className="flex items-center gap-2">
-                            <span className={`font-bold uppercase text-[9px] tracking-[0.2em] ${cfg.subtext}`}>📋 Auditable</span>
+                            <span className={`flex items-center gap-1.5 font-bold uppercase text-[9px] tracking-[0.2em] ${cfg.subtext}`}>
+                                <ClipboardCheck strokeWidth={1.5} className="w-6 h-6 text-emerald-500" /> Auditable
+                            </span>
                             {project.tasksSummary && (
                                 <span className="text-[8px] font-black text-emerald-500/60 tracking-tighter bg-emerald-500/5 px-1 rounded">
                                     {project.tasksSummary.done}/{project.tasksSummary.total}
@@ -132,6 +143,18 @@ const ProjectCard = ({ project, onClick }) => {
                     </div>
                 </div>
 
+                {/* Layer C: Human Context */}
+                {project.humanContext?.nextStep && (
+                    <div className={`pt-4 border-t ${cfg.border}`}>
+                        <div className="flex items-start gap-2">
+                            <Lightbulb strokeWidth={1.5} className="w-6 h-6 text-amber-500 shrink-0 mt-0.5" />
+                            <p className={`text-xs leading-relaxed ${cfg.desc || 'text-slate-300'} font-medium`}>
+                                {project.humanContext.nextStep}
+                            </p>
+                        </div>
+                    </div>
+                )}
+
                 <div className={`pt-4 border-t flex justify-between items-center ${cfg.border} opacity-80`}>
                     <div>
                         <p className={`text-[10px] uppercase font-bold tracking-widest mb-1 ${cfg.subtext}`}>Last Update</p>
@@ -142,7 +165,7 @@ const ProjectCard = ({ project, onClick }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

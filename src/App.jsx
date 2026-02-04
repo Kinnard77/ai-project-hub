@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import ProjectCard from './components/ProjectCard';
 import ProjectDetail from './components/ProjectDetail';
+import Navbar from './components/Navbar';
 import statusData from './data/status.json';
 
 function App() {
@@ -18,7 +20,9 @@ function App() {
             <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-fuchsia-900/20 blur-[120px] rounded-full"></div>
             <div className="absolute top-[20%] right-[10%] w-[30%] h-[30%] bg-indigo-900/10 blur-[100px] rounded-full"></div>
 
-            <div className="max-w-7xl mx-auto relative z-10">
+            <Navbar />
+
+            <div className="max-w-7xl mx-auto relative z-10 pt-24">
                 {!selectedProject ? (
                     <>
                         <div className="text-center mb-16 animate-in fade-in slide-in-from-top duration-700">
@@ -31,7 +35,20 @@ function App() {
                             <div className="mt-6 h-1 w-24 bg-gradient-to-r from-violet-600 to-indigo-600 mx-auto rounded-full shadow-[0_0_10px_rgba(139,92,246,0.5)]"></div>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <motion.div
+                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                            variants={{
+                                hidden: { opacity: 0 },
+                                show: {
+                                    opacity: 1,
+                                    transition: {
+                                        staggerChildren: 0.1
+                                    }
+                                }
+                            }}
+                            initial="hidden"
+                            animate="show"
+                        >
                             {statusData.map((project) => (
                                 <ProjectCard
                                     key={project.id}
@@ -39,7 +56,7 @@ function App() {
                                     onClick={() => handleProjectClick(project)}
                                 />
                             ))}
-                        </div>
+                        </motion.div>
                     </>
                 ) : (
                     <ProjectDetail
