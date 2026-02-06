@@ -66,7 +66,7 @@ function App() {
                 )}
 
                 <div className="mt-24 text-center text-xs text-slate-500 font-medium">
-                    <p className="opacity-60">Powered by Antigravity Agent • 2026 Edition</p>
+                    <p className="opacity-60">Design by Jorge Bonilla & Powered by Antigravity Agent • 2026 Edition</p>
                     <p className="mt-2 text-violet-400/40 uppercase tracking-widest text-[10px]">Last Heartbeat: {new Date().toLocaleTimeString()}</p>
                 </div>
             </div>

@@ -126,7 +126,7 @@
         ],
         "humanContext": {
             "summary": "App de hábitos diarios que te ayuda a cambiar poco a poco. Ya tiene dos fases completas y el sistema de progresión funciona.",
-            "nextStep": "Hacer que el usuario pueda recuperar su contraseña si la olvida.",
+            "nextStep": "Auth flows (reset/verify) + UX optimistic",
             "nextStepWhy": "Sin esto, si alguien olvida su contraseña queda atrapado fuera de sus datos. Es básico para que la app sea usable."
         },
         "tasksSource": "../Micropasos App/micropasos---app/tasks.md",
@@ -258,7 +258,7 @@
         "description": "Dashboard central de proyectos para el iPad del Usuario.",
         "progressAssisted": 90,
         "progressAuditable": 0,
-        "assistedPhase": "Cierre",
+        "assistedPhase": "FASE 2 (Auditable 0%)",
         "assistedSignals": [
             "🌌 Estética Dark/Violet finalizada",
             "🔍 Arquitectura de Doble Capa operativa",
@@ -266,7 +266,7 @@
         ],
         "humanContext": {
             "summary": "Este mismo dashboard que estás viendo ahora. Ya funciona y se actualiza con npm run deploy cuando marcas tareas en otros proyectos.",
-            "nextStep": "Configurar que el deploy se haga automáticamente sin que lo hagas tú.",
+            "nextStep": "Auto-deploy GitHub Actions + reglas anti-duplicados",
             "nextStepWhy": "Para que realmente sea un Peace of Mind: entra, ves la realidad, sin hacer nada."
         },
         "tasksSource": "tasks.md",
@@ -378,7 +378,7 @@
         "owner": "Jorge Bonilla/IF&IF Studio 2026",
         "progressAssisted": 10,
         "progressAuditable": 20,
-        "assistedPhase": "Planeación",
+        "assistedPhase": "P0 (definición)",
         "assistedSignals": [
             "✅ Proyecto autorizado en PROJECT_REGISTRY",
             "📄 project.md definido con alcance P0",
@@ -386,7 +386,7 @@
         ],
         "humanContext": {
             "summary": "Un Street Game que ocurre en catedrales reales. El jugador tiene que estar físicamente ahí. No resuelve acertijos — atraviesa experiencias que cambian cómo percibe el espacio. Hay tensión que se acumula y un momento clímax al final. Tú eres el autor que diseña cada experiencia.",
-            "nextStep": "Diseñar la Creator Tool: la herramienta que tú vas a usar para crear la experiencia de cada catedral.",
+            "nextStep": "Creator Tool + onboarding + clímax",
             "nextStepWhy": "Sin esta herramienta no puede avanzar nada más. Es el punto de partida de todo. Primero necesitas poder crear experiencias, después viene todo lo demás."
         },
         "tasksSource": "../UMBRA/tasks.md",
@@ -402,5 +402,58 @@
             "Diseñar clímax lúdico inicial",
             "Definir arquitectura técnica (backend autoritario)"
         ]
+    },
+    {
+        "id": 16,
+        "name": "Odisea Travel Platform (UMBRELLA)",
+        "status": "Active",
+        "theme": "slate",
+        "tech": "TBD",
+        "lastUpdate": "2026-02-06",
+        "description": "No description.",
+        "progressAssisted": 0,
+        "progressAuditable": 0,
+        "assistedPhase": "Conceptualization",
+        "assistedSignals": [],
+        "humanContext": {
+            "summary": "",
+            "nextStep": "Initial setup",
+            "nextStepWhy": "New project registration."
+        },
+        "tasksSource": null,
+        "tasksSummary": {
+            "total": 0,
+            "done": 0,
+            "pending": 0
+        },
+        "pendingFocus": [],
+        "owner": "Jorge Bonilla/IF&IF Studio 2026"
+    },
+    {
+        "id": 17,
+        "name": "Digital Health Sentinel",
+        "status": "Planning",
+        "theme": "slate",
+        "tech": "TBD",
+        "lastUpdate": "2026-02-06",
+        "description": "App de vigilancia de consumo digital y bienestar mental (Dieta de Contenido). Notificaciones vía Telegram.",
+        "progressAssisted": 0,
+        "progressAuditable": 0,
+        "assistedPhase": "P0 (Conceptualización)",
+        "assistedSignals": [],
+        "humanContext": {
+            "summary": "App de vigilancia de consumo digital y bienestar mental (Dieta de Contenido). Notificaciones vía Telegram.",
+            "nextStep": "Solo registro inicial. Prioridad BAJA.",
+            "nextStepWhy": "New project registration."
+        },
+        "tasksSource": "../Digital-Health-Sentinel/tasks.md",
+        "tasksSummary": {
+            "total": 0,
+            "done": 0,
+            "pending": 0
+        },
+        "pendingFocus": [],
+        "owner": "Jorge Bonilla/IF&IF Studio 2026",
+        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\Digital-Health-Sentinel\\tasks.md"
     }
 ]
