@@ -26,7 +26,6 @@
             "done": 3,
             "pending": 2
         },
-        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\OdiseaChallenge\\tasks.md",
         "pendingFocus": [
             "Sistema de progresión ANOMALY -> REVELATION",
             "Optimización para iPad (Safari Mobile)"
@@ -135,7 +134,6 @@
             "done": 125,
             "pending": 83
         },
-        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\Micropasos App\\micropasos---app\\tasks.md",
         "pendingFocus": [
             "Password reset/recovery flow",
             "Email verification handling",
@@ -275,7 +273,6 @@
             "done": 0,
             "pending": 6
         },
-        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\The AI Projects Hub App\\tasks.md",
         "pendingFocus": [
             "Automatizar deploy a GitHub Pages con GitHub Actions",
             "Validar workflow de deploy (Node 22 + Vite + dist)",
@@ -363,7 +360,6 @@
             "done": 8,
             "pending": 0
         },
-        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\AgenteOperativo\\tasks.md",
         "pendingFocus": [],
         "owner": "Jorge Bonilla/IF&IF Studio 2026"
     },
@@ -390,7 +386,6 @@
             "nextStepWhy": "Sin esta herramienta no puede avanzar nada más. Es el punto de partida de todo. Primero necesitas poder crear experiencias, después viene todo lo demás."
         },
         "tasksSource": "../UMBRA/tasks.md",
-        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\UMBRA\\tasks.md",
         "tasksSummary": {
             "total": 5,
             "done": 1,
@@ -453,7 +448,6 @@
             "pending": 0
         },
         "pendingFocus": [],
-        "owner": "Jorge Bonilla/IF&IF Studio 2026",
-        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\Digital-Health-Sentinel\\tasks.md"
+        "owner": "Jorge Bonilla/IF&IF Studio 2026"
     }
 ]
