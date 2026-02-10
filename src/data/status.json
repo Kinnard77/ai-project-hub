@@ -5,7 +5,7 @@
         "status": "Active",
         "theme": "blue",
         "tech": "React / TS / Fetch",
-        "lastUpdate": "2026-01-29",
+        "lastUpdate": "2026-02-10",
         "description": "Plataforma de acertijos con arquitectura autoritaria (Ruta 2). El backend controla la lógica y validación.",
         "progressAssisted": 60,
         "progressAuditable": 60,
@@ -30,7 +30,8 @@
             "Sistema de progresión ANOMALY -> REVELATION",
             "Optimización para iPad (Safari Mobile)"
         ],
-        "owner": "Jorge Bonilla/IF&IF Studio 2026"
+        "owner": "Jorge Bonilla/IF&IF Studio 2026",
+        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\OdiseaChallenge\\tasks.md"
     },
     {
         "id": 2,
@@ -113,7 +114,7 @@
         "status": "Active",
         "theme": "indigo",
         "tech": "Next.js 14 / Supabase",
-        "lastUpdate": "2026-02-01",
+        "lastUpdate": "2026-02-10",
         "description": "Identity-based micro-habits tracker with Hero's Journey progression.",
         "progressAssisted": 75,
         "progressAuditable": 60.1,
@@ -219,7 +220,8 @@
             "Add sound effects (optional)",
             "Create onboarding tutorial with animations"
         ],
-        "owner": "Jorge Bonilla/IF&IF Studio 2026"
+        "owner": "Jorge Bonilla/IF&IF Studio 2026",
+        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\Micropasos App\\micropasos---app\\tasks.md"
     },
     {
         "id": 6,
@@ -252,10 +254,10 @@
         "status": "Active",
         "theme": "violet",
         "tech": "React / Vite / Tailwind",
-        "lastUpdate": "2026-02-01",
+        "lastUpdate": "2026-02-10",
         "description": "Dashboard central de proyectos para el iPad del Usuario.",
         "progressAssisted": 90,
-        "progressAuditable": 0,
+        "progressAuditable": 14.29,
         "assistedPhase": "FASE 2 (Auditable 0%)",
         "assistedSignals": [
             "🌌 Estética Dark/Violet finalizada",
@@ -269,8 +271,8 @@
         },
         "tasksSource": "tasks.md",
         "tasksSummary": {
-            "total": 6,
-            "done": 0,
+            "total": 7,
+            "done": 1,
             "pending": 6
         },
         "pendingFocus": [
@@ -281,7 +283,8 @@
             "Afinar auto-discovery (carpetas vs proyectos reales)",
             "Revisar y certificar tareas de UMBRA (P0 / P1)"
         ],
-        "owner": "Jorge Bonilla/IF&IF Studio 2026"
+        "owner": "Jorge Bonilla/IF&IF Studio 2026",
+        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\The AI Projects Hub App\\tasks.md"
     },
     {
         "id": 8,
@@ -339,7 +342,7 @@
         "status": "Active",
         "theme": "slate",
         "tech": "Node / TS / Operative Architecture",
-        "lastUpdate": "2026-02-01",
+        "lastUpdate": "2026-02-10",
         "description": "Sistema de gestión de itinerarios con rigor determinista y validación dual (Planeación/Certificación).",
         "progressAssisted": 50,
         "progressAuditable": 100,
@@ -361,7 +364,8 @@
             "pending": 0
         },
         "pendingFocus": [],
-        "owner": "Jorge Bonilla/IF&IF Studio 2026"
+        "owner": "Jorge Bonilla/IF&IF Studio 2026",
+        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\AgenteOperativo\\tasks.md"
     },
     {
         "id": 15,
@@ -369,7 +373,7 @@
         "status": "Planning",
         "theme": "violet",
         "tech": "TBD",
-        "lastUpdate": "2026-02-01",
+        "lastUpdate": "2026-02-10",
         "description": "Street Game iniciático en catedrales reales. Presencia física obligatoria.",
         "owner": "Jorge Bonilla/IF&IF Studio 2026",
         "progressAssisted": 10,
@@ -396,7 +400,8 @@
             "Simular visita del autor con Creator Tool",
             "Diseñar clímax lúdico inicial",
             "Definir arquitectura técnica (backend autoritario)"
-        ]
+        ],
+        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\UMBRA\\tasks.md"
     },
     {
         "id": 16,
