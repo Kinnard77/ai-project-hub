@@ -23,6 +23,8 @@ Owner: Jorge Bonilla / IF&IF Studio 2026
 ## OPS-010 — Agente Operativo: Arquitecto Silencioso (ID 10)
 - repoFolder: AgenteOperativo
 - status: Active
+- phase: FASE 3 (Implementación Operativa)
+- focusNow: Paquetes Operativos + Check-in QR
 - notes: App interna para operación de viajes (ciudades, itinerarios, control operativo).
 
 ## GAME-001 — Odisea Challenge (Frontend) (ID 1)
