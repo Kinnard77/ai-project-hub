@@ -1,0 +1,31 @@
+Reading Registry from: C:\Users\illus\PROYECTOS_IA_MASTER\PROJECT_REGISTRY.md
+[OK]   Line 4: Code=HUB-007 ID=7 Name="The AI Project Hub (OFICIAL)"
+[OK]   Line 11: Code=GAME-015 ID=15 Name="UMBRA"
+[OK]   Line 18: Code=APP-005 ID=5 Name="Micropasos App"
+[OK]   Line 23: Code=OPS-010 ID=10 Name="Agente Operativo: Arquitecto Silencioso"
+[OK]   Line 28: Code=GAME-001 ID=1 Name="Odisea Challenge (Frontend)"
+[OK]   Line 32: Code=APP-006 ID=6 Name="Viajes Backend"
+[OK]   Line 37: Code=UI-008 ID=8 Name="Travel Booking UI"
+[OK]   Line 42: Code=PROG-016 ID=16 Name="Odisea Travel Platform (UMBRELLA)"
+[OK]   Line 52: Code=APP-002 ID=2 Name="Lotería Mexicana"
+[OK]   Line 55: Code=APP-003 ID=3 Name="Iron & Gears"
+[OK]   Line 58: Code=GAME-004 ID=4 Name="Chronos 1881"
+[OK]   Line 61: Code=GAME-009 ID=9 Name="RiddleSphere: Neon Challenge"
+[OK]   Line 64: Code=APP-017 ID=17 Name="Digital Health Sentinel"
+   -> Saved Project HUB-007 (Keys: repoFolder, status, phase, focusNow, notes)
+   -> Saved Project GAME-015 (Keys: repoFolder, status, phase, focusNow, notes)
+   -> Saved Project APP-005 (Keys: repoFolder, status, focusNow)
+   -> Saved Project OPS-010 (Keys: repoFolder, status, notes)
+   -> Saved Project GAME-001 (Keys: repoFolder, status)
+   -> Saved Project APP-006 (Keys: repoFolder, status, tech)
+   -> Saved Project UI-008 (Keys: repoFolder, status, tech)
+   -> Saved Project PROG-016 (Keys: status, fronts, contrato, focusNow)
+   -> Saved Project APP-002 (Keys: status)
+   -> Saved Project APP-003 (Keys: status)
+   -> Saved Project GAME-004 (Keys: status)
+   -> Saved Project GAME-009 (Keys: status)
+   -> Saved Project APP-017 (Keys: repoFolder, status, phase, focusNow, notes)
+Found 13 projects in Registry.
+Reading status.json from: C:\Users\illus\PROYECTOS_IA_MASTER\The AI Projects Hub App\src\data\status.json
+
+NO CHANGE: status.json was already in sync with Registry.
