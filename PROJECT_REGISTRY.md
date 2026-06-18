@@ -9,7 +9,7 @@ Owner: Jorge Bonilla / IF&IF Studio 2026
 - notes: HUB oficial. Sin snapshots/muestras.
 
 ## GAME-015 — UMBRA (ID 15)
-- repoFolder: UMBRA
+- repoFolder: tt-creator-tool-pwa
 - status: Planning
 - phase: P0 (definición)
 - focusNow: Creator Tool + onboarding + clímax
