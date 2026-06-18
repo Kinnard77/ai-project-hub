@@ -1,3 +1,5 @@
+node_modules/
+dist/
+.env
 sync_audit.log
 scripts/sync_audit.log
-"node_modules/" 
