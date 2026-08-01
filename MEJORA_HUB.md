@@ -56,8 +56,10 @@ cuanto cambia un archivo. Sin compilar, sin desplegar, sin recordar nada.
 
 ### Detalles a tener en cuenta
 
-- La API de GitHub sin identificarse permite **60 peticiones por hora**.
-  Suficiente, pero conviene guardar la respuesta un rato para no gastarlas.
+- **Decidido**: se refresca **cada 30 minutos**. La API sin identificarse
+  permite 60 peticiones por hora, y con ese ritmo sobran de largo. Entre
+  refrescos se sirve lo guardado, y en pantalla se indica de cuándo es.
+  Un botón de "actualizar ahora" para cuando Jorge acabe de editar un archivo.
 - Los repositorios **privados no se pueden leer así**. `umbra-ar-godot` es
   privado: su estado tendrá que vivir en el registro del hub, que es público.
 - Si GitHub no responde, usar `status.json` y **decirlo en pantalla**.
