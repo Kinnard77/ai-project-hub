@@ -62,17 +62,32 @@ function fundir(delRegistro) {
   return delRegistro.map((p) => {
     const previo = statusData.find((s) => s.id === p.id) || {};
     const c = p.campos;
+
+    // Varios proyectos no traen todos los campos en status.json y la tarjeta
+    // salia con huecos en blanco. Se rellenan desde el registro o con un
+    // valor razonable: una tarjeta a medias parece rota, y el hub existe
+    // justo para que Jorge vea el estado de un vistazo.
+    const foco = c.focusNow || previo.pendingFocus || '';
+    const fase = c.phase || previo.assistedPhase || '—';
+    const asistido = previo.progressAssisted ?? 0;
+
     return {
       ...previo,
       id: p.id ?? previo.id,
       codigo: p.codigo,
       name: p.name || previo.name,
       esParaguas: p.esParaguas,
-      status: c.status || previo.status,
-      tech: c.tech || previo.tech,
-      description: c.notes || c.description || previo.description,
-      pendingFocus: c.focusNow || previo.pendingFocus,
-      assistedPhase: c.phase || previo.assistedPhase,
+      status: c.status || previo.status || 'Active',
+      tech: c.tech || previo.tech || c.repoFolder || '—',
+      theme: previo.theme || 'violet',
+      lastUpdate: previo.lastUpdate || new Date().toISOString().slice(0, 10),
+      description: c.notes || c.description || previo.description || foco,
+      humanContext: previo.humanContext || c.notes || foco,
+      tasksSummary: previo.tasksSummary || (foco ? `Siguiente: ${foco}` : 'Sin tareas anotadas'),
+      progressAssisted: asistido,
+      progressAuditable: previo.progressAuditable ?? asistido,
+      pendingFocus: foco,
+      assistedPhase: fase,
       repo: c.repo || null,
       publicado: c.publicado || null,
       padre: c.padre || null,
