@@ -3,10 +3,15 @@ import { motion } from 'framer-motion';
 import ProjectCard from './components/ProjectCard';
 import ProjectDetail from './components/ProjectDetail';
 import Navbar from './components/Navbar';
-import statusData from './data/status.json';
+import { useRegistroVivo } from './hooks/useRegistroVivo';
 
 function App() {
     const [selectedProject, setSelectedProject] = useState(null);
+    const { proyectos, fuente, actualizado, cargando, error, refrescar } = useRegistroVivo();
+
+    const desdeCuando = actualizado
+        ? actualizado.toLocaleString('es-ES', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
+        : null;
 
     const handleProjectClick = (project) => {
         setSelectedProject(project);
@@ -33,6 +38,33 @@ function App() {
                                 Centralized Command Center & Peace of Mind Dashboard
                             </p>
                             <div className="mt-6 h-1 w-24 bg-gradient-to-r from-violet-600 to-indigo-600 mx-auto rounded-full shadow-[0_0_10px_rgba(139,92,246,0.5)]"></div>
+
+                            <div className="mt-6 flex items-center justify-center gap-3 text-sm">
+                                {fuente === 'github' ? (
+                                    <span className="text-emerald-400">
+                                        ● En vivo desde GitHub{desdeCuando ? ` · leído ${desdeCuando}` : ''}
+                                    </span>
+                                ) : (
+                                    <span className="text-amber-400">
+                                        ▲ Datos empaquetados, pueden estar desfasados
+                                        {error ? ` · ${error}` : ''}
+                                    </span>
+                                )}
+                                <button
+                                    onClick={refrescar}
+                                    disabled={cargando}
+                                    className="px-3 py-1 rounded-full border border-slate-600 text-slate-300 hover:border-violet-500 hover:text-violet-300 transition disabled:opacity-40"
+                                >
+                                    {cargando ? 'Leyendo…' : 'Actualizar ahora'}
+                                </button>
+                                <a
+                                    href="https://github.com/Kinnard77/ai-project-hub/blob/main/PROJECT_REGISTRY.md"
+                                    target="_blank" rel="noreferrer"
+                                    className="text-slate-500 hover:text-violet-400 transition"
+                                >
+                                    editar registro ↗
+                                </a>
+                            </div>
                         </div>
 
                         <motion.div
@@ -49,7 +81,7 @@ function App() {
                             initial="hidden"
                             animate="show"
                         >
-                            {statusData.map((project) => (
+                            {proyectos.map((project) => (
                                 <ProjectCard
                                     key={project.id}
                                     project={project}
