@@ -10,10 +10,15 @@ Owner: Jorge Bonilla / IF&IF Studio 2026
 
 ## GAME-015 — UMBRA (ID 15)
 - repoFolder: tt-creator-tool-pwa
-- status: Planning
-- phase: P0 (definición)
-- focusNow: Creator Tool + onboarding + clímax
-- notes: Nace del chat Pantheon/Catedrales. Presencia obligatoria.
+- repos: Kinnard77/tt-creator-tool-pwa (Creator Tool) · Kinnard77/umbra-ar-godot (AR, privado)
+- status: Active
+- phase: P1 (arquitectura cerrada, validación de precisión en curso)
+- focusNow: BLOQUEANTE — ARCore no sigue el movimiento (6 m reales = 0,7 m medidos)
+- publicado: lelegion.com/v10 (topógrafo AR) · lelegion.com/catedral
+- vocabulario: UMBRA el juego · Labyrinthos la sede · Umbral el nodo · Ciclo = 4 umbrales
+- diseño: ver carpeta `diseno/` en tt-creator-tool-pwa (5 documentos)
+- decidido: se juega en FAMILIAS de 3-4 · 12 máquinas · arco de 8 etapas · 5 ciclos = etapas II-VI
+- notes: Nace del chat Pantheon/Catedrales. Presencia obligatoria. Anti-IA por diseño.
 
 ## APP-005 — Micropasos App (ID 5)
 - repoFolder: Micropasos App/micropasos---app
