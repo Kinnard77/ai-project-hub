@@ -92,9 +92,71 @@ function fundir(delRegistro) {
       publicado: c.publicado || null,
       padre: c.padre || null,
       componentes: c.componentes || null,
+      _urlTareas: urlTareas(c),
       enGitHub: true,
     };
   });
+}
+
+/**
+ * Cuenta las casillas de un tasks.md. Esto es lo unico realmente auditable:
+ * no una estimacion escrita a mano, sino lo que esta marcado como hecho.
+ */
+export function contarTareas(markdown) {
+  const hechas = (markdown.match(/^\s*[-*]\s+\[[xX]\]/gm) || []).length;
+  const pendientes = (markdown.match(/^\s*[-*]\s+\[ \]/gm) || []).length;
+  const total = hechas + pendientes;
+  if (!total) return null;
+
+  // La primera pendiente es la siguiente a atacar: el orden del archivo es
+  // deliberado, lo que bloquea va arriba.
+  const linea = markdown.split('\n').find((l) => /^\s*[-*]\s+\[ \]/.test(l)) || '';
+  const siguiente = linea
+    .replace(/^\s*[-*]\s+\[ \]\s*/, '')
+    .replace(/\*\*/g, '')
+    .trim();
+
+  return {
+    hechas,
+    pendientes,
+    total,
+    porcentaje: Math.round((hechas / total) * 100),
+    siguiente,
+  };
+}
+
+/** Deduce donde vive el tasks.md de un proyecto a partir de su campo repo. */
+function urlTareas(campos) {
+  if (campos.tareasUrl) return campos.tareasUrl;
+  const repo = (campos.repo || '').match(/([\w.-]+\/[\w.-]+)/);
+  if (!repo) return null;
+  // Los privados no se pueden leer sin credenciales.
+  if (/privado|private/i.test(campos.repo)) return null;
+  return `https://raw.githubusercontent.com/${repo[1]}/main/tasks.md`;
+}
+
+/** Añade a cada proyecto el recuento real de sus tareas, si es accesible. */
+async function conTareasReales(proyectos) {
+  return Promise.all(
+    proyectos.map(async (p) => {
+      const url = p._urlTareas;
+      if (!url) return p;
+      try {
+        const r = await fetch(url, { cache: 'no-store' });
+        if (!r.ok) return p;
+        const t = contarTareas(await r.text());
+        if (!t) return p;
+        return {
+          ...p,
+          progressAuditable: t.porcentaje,
+          tareas: t,
+          tasksSummary: `${t.hechas} de ${t.total} hechas · siguiente: ${t.siguiente}`,
+        };
+      } catch {
+        return p;
+      }
+    })
+  );
 }
 
 export function useRegistroVivo() {
@@ -119,7 +181,7 @@ export function useRegistroVivo() {
       const r = await fetch(CRUDO, { cache: 'no-store' });
       if (!r.ok) throw new Error(`GitHub respondio ${r.status}`);
 
-      const fundidos = fundir(interpretarRegistro(await r.text()));
+      const fundidos = await conTareasReales(fundir(interpretarRegistro(await r.text())));
       if (!fundidos.length) throw new Error('El registro llego vacio');
 
       setProyectos(fundidos);
