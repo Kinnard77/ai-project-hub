@@ -38,9 +38,18 @@ UMBRA es el juego · **Labyrinthos** la sede (catedral, parque, calle) ·
 
 **BLOQUEANTE**: ARCore no sigue el movimiento. Caminando 6 m reales, la app
 reporta 0,7 m. Sin resolver esto, ninguna medida de precisión vale.
-Siguiente paso: **pantalla de diagnóstico** — posición cruda de la cámara en
-vivo, estado del tracking permanente, y el registro en texto para que Jorge
-lo fotografíe (los datos viven en su móvil, el asistente no puede leerlos).
+
+**Ya construido para diagnosticarlo (v17)**: con el botón del medio, *antes*
+de iniciar AR, se activa el modo diagnóstico. Muestra en vivo el estado del
+tracking, la posición cruda de la cámara, la distancia en línea recta desde
+el inicio, el recorrido acumulado y los fotogramas por segundo.
+**Pedirle a Jorge una foto de esa pantalla**: los datos viven en su móvil y
+el asistente no puede leerlos.
+
+Cómo interpretarla: si camina 10 m y la línea recta dice 2, la posición no
+crece como debe. Si el recorrido acumulado sube pero la línea recta no, la
+posición oscila sin avanzar. Si los fotogramas caen por debajo de diez, el
+problema es de rendimiento.
 
 ## Reglas de trabajo que costaron horas
 
@@ -54,12 +63,49 @@ lo fotografíe (los datos viven en su móvil, el asistente no puede leerlos).
 - Tras exportar, poner `display: fullscreen` en `index.manifest.json`.
 - Describir tamaños como **fracción de pantalla**, nunca en porcentajes.
 
+## Los porqués — lo que más cuesta reconstruir
+
+Jorge trabaja en varios proyectos a la vez y vuelve a este tras semanas. Los
+datos los recupera de los archivos; **los porqués, no**. Aquí están:
+
+- **Labyrinthos y no Templo ni Témenos.** Témenos no le decía nada a nadie;
+  Recinto sonaba a jerga política; Templo gustaba pero no emocionaba. El
+  laberinto se eligió porque las catedrales góticas *tenían* laberintos en el
+  suelo que los peregrinos recorrían como iniciación, y porque el nombre
+  además **sugiere cómo diseñar**: un laberinto tiene centro, recorrido y
+  orden de llegada. En griego, no en español, por decisión suya.
+- **El orgullo no necesita actor.** En una familia el público ya está dentro:
+  a un niño le pesa más el reconocimiento de su padre que el de un extraño
+  disfrazado. Y un diseño que exige contratar a alguien es frágil: no escala
+  a cinco sedes ni funciona un martes por la mañana.
+- **El miedo se descartó a propósito**, no por difícil. El miedo cierra la
+  mirada y este juego necesita abrirla; además hay niños en el grupo.
+- **Los artefactos son Elixir, no Orgullo.** El orgullo es inmediato; la
+  Character Sheet, la taza y la cena llegan después. Su retraso deja de ser
+  un defecto: el elixir se disfruta en el mundo ordinario.
+- **La emoción no se elige, es consecuencia de la máquina.** Si hay que
+  generar Urgencia, para eso está la Cuenta Regresiva, y no debe generarse
+  Urgencia en otra etapa del arco.
+- **La calibración manual sustituye al VPS.** El tracking de ARCore ya es
+  centimétrico en corto; lo que le falta es saber dónde está anclado al
+  mundo. Dos puntos fijan origen y rumbo; cuatro lo hacen un 45% mejor y
+  delatan al mal medido. El ojo humano hace lo que haría la nube.
+- **La oscuridad puede ser el destino, pero no el camino.** ARCore deja de
+  seguirte si la recorre, pero aguanta unos segundos con los sensores.
+
 ## Pendiente de Jorge
 
 - Comparativa Data Collection Box vs POIs (**no tocar** hasta que avise).
 - ¿Personaje narrativo y rol jugable son la misma entidad?
 - Enseñar la generación del personaje y la taza.
 - Idea anotada: tableta informativa en AR frente a obras de arte.
+
+## El hub, para consultar el estado
+
+`kinnard77.github.io/ai-project-hub` lee **en vivo** el `PROJECT_REGISTRY.md`
+de GitHub y cuenta las casillas de cada `tasks.md`. La barra *Auditable* es
+real; la *Asistida* es una estimación. Editar el registro en GitHub basta:
+la app lo refleja al recargar.
 
 ## Qué necesito lograr en este chat
 
