@@ -5,8 +5,12 @@ Owner: Jorge Bonilla / IF&IF Studio 2026
 - repoFolder: The AI Projects Hub App
 - status: Active
 - phase: FASE 2 (Auditable 0%)
-- focusNow: Auto-deploy GitHub Actions + reglas anti-duplicados
+- focusNow: LEER GITHUB EN VIVO — la app usa src/data/status.json estatico y
+  muestra datos viejos. Plan en MEJORA_HUB.md
 - notes: HUB oficial. Sin snapshots/muestras.
+- fallo detectado (1 ago 2026): Jorge dejo de consultarlo porque no le
+  resuelve ver que queda pendiente. Un sistema de memoria no puede depender
+  de que el usuario recuerde alimentarlo.
 
 ## GAME-015 — UMBRA (ID 15)
 - repoFolder: tt-creator-tool-pwa
