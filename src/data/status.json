@@ -1,458 +1,495 @@
 [
-    {
-        "id": 1,
-        "name": "Odisea Challenge (Frontend)",
-        "status": "Active",
-        "theme": "blue",
-        "tech": "React / TS / Fetch",
-        "lastUpdate": "2026-02-10",
-        "description": "Plataforma de acertijos con arquitectura autoritaria (Ruta 2). El backend controla la lógica y validación.",
-        "progressAssisted": 60,
-        "progressAuditable": 60,
-        "assistedPhase": "Producción",
-        "assistedSignals": [
-            "🛡️ Arquitectura Autoritaria establecida",
-            "🧠 Progresión narrativa por estados funcional",
-            "📱 Interfaz optimizada para iPad"
-        ],
-        "humanContext": {
-            "summary": "Es un juego de acertijos que va a funcionar en iPad. Ya tiene la estructura principal y el backend que controla las respuestas correctas.",
-            "nextStep": "Hacer que el juego avance automáticamente de un nivel al siguiente cuando el jugador resuelve un acertijo.",
-            "nextStepWhy": "Es la parte que hace que el juego se siente completo al jugarlo. Sin esto, el jugador resuelve un acertijo pero no pasa a nada."
-        },
-        "tasksSource": "../OdiseaChallenge/tasks.md",
-        "tasksSummary": {
-            "total": 5,
-            "done": 3,
-            "pending": 2
-        },
-        "pendingFocus": [
-            "Sistema de progresión ANOMALY -> REVELATION",
-            "Optimización para iPad (Safari Mobile)"
-        ],
-        "owner": "Jorge Bonilla/IF&IF Studio 2026",
-        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\OdiseaChallenge\\tasks.md"
+  {
+    "id": 1,
+    "name": "Odisea Challenge (Frontend)",
+    "status": "Active",
+    "theme": "blue",
+    "tech": "React / TS / Fetch",
+    "lastUpdate": "2026-02-10",
+    "description": "Plataforma de acertijos con arquitectura autoritaria (Ruta 2). El backend controla la lógica y validación.",
+    "progressAssisted": 60,
+    "progressAuditable": 60,
+    "assistedPhase": "Producción",
+    "assistedSignals": [
+      "🛡️ Arquitectura Autoritaria establecida",
+      "🧠 Progresión narrativa por estados funcional",
+      "📱 Interfaz optimizada para iPad"
+    ],
+    "humanContext": {
+      "summary": "Es un juego de acertijos que va a funcionar en iPad. Ya tiene la estructura principal y el backend que controla las respuestas correctas.",
+      "nextStep": "Hacer que el juego avance automáticamente de un nivel al siguiente cuando el jugador resuelve un acertijo.",
+      "nextStepWhy": "Es la parte que hace que el juego se siente completo al jugarlo. Sin esto, el jugador resuelve un acertijo pero no pasa a nada."
     },
-    {
-        "id": 2,
-        "name": "Lotería Mexicana",
-        "status": "Active",
-        "theme": "pink",
-        "tech": "React",
-        "lastUpdate": "2026-01-15",
-        "description": "Juego de Lotería tradicional con animaciones y voz.",
-        "progressAssisted": 60,
-        "progressAuditable": null,
-        "assistedPhase": "Producción",
-        "assistedSignals": [
-            "Tablero funcional al 100%",
-            "Lógica de mazo al 80%",
-            "Integración de voz completada"
-        ],
-        "humanContext": {
-            "summary": "Juego de lotería tradicional mexicana con animaciones y voz. El tablero ya funciona y las cartas se voltean solas.",
-            "nextStep": null,
-            "nextStepWhy": null
-        },
-        "tasksSource": null,
-        "tasksSummary": null,
-        "pendingTop": null
+    "tasksSource": "../OdiseaChallenge/tasks.md",
+    "tasksSummary": {
+      "total": 5,
+      "done": 3,
+      "pending": 2
     },
-    {
-        "id": 3,
-        "name": "Iron & Gears",
-        "status": "Active",
-        "theme": "amber",
-        "tech": "HTML/Tailwind",
-        "lastUpdate": "2026-01-10",
-        "description": "Ecommerce de refacciones industriales.",
-        "progressAssisted": 40,
-        "progressAuditable": null,
-        "assistedPhase": "Producción",
-        "assistedSignals": [
-            "Diseño UI base finalizado",
-            "Catálogo en carga de datos",
-            "Estructura Tailwind optimizada"
-        ],
-        "humanContext": {
-            "summary": "Tienda online de refacciones industriales. El diseño base ya está listo y se está cargando el catálogo de productos.",
-            "nextStep": null,
-            "nextStepWhy": null
-        },
-        "tasksSource": null,
-        "tasksSummary": null,
-        "pendingTop": null
+    "pendingFocus": [
+      "Sistema de progresión ANOMALY -> REVELATION",
+      "Optimización para iPad (Safari Mobile)"
+    ],
+    "owner": "Jorge Bonilla/IF&IF Studio 2026",
+    "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\OdiseaChallenge\\tasks.md"
+  },
+  {
+    "id": 2,
+    "name": "Lotería Mexicana",
+    "status": "Active",
+    "theme": "pink",
+    "tech": "React",
+    "lastUpdate": "2026-01-15",
+    "description": "Juego de Lotería tradicional con animaciones y voz.",
+    "progressAssisted": 60,
+    "progressAuditable": null,
+    "assistedPhase": "Producción",
+    "assistedSignals": [
+      "Tablero funcional al 100%",
+      "Lógica de mazo al 80%",
+      "Integración de voz completada"
+    ],
+    "humanContext": {
+      "summary": "Juego de lotería tradicional mexicana con animaciones y voz. El tablero ya funciona y las cartas se voltean solas.",
+      "nextStep": null,
+      "nextStepWhy": null
     },
-    {
-        "id": 4,
-        "name": "Chronos 1881",
-        "status": "Planning",
-        "theme": "orange",
-        "tech": "Godot/Supabase",
-        "lastUpdate": "2026-01-05",
-        "description": "RPG de viajes en el tiempo.",
-        "progressAssisted": 20,
-        "progressAuditable": null,
-        "assistedPhase": "Planeación",
-        "assistedSignals": [
-            "Definición de personajes en proceso",
-            "Prototipo de guardado funcional",
-            "Concept Art inicial terminado"
-        ],
-        "humanContext": {
-            "summary": "RPG de viajes en el tiempo, todavía en fase de planificación. Ya hay concept art y los personajes están definiéndose.",
-            "nextStep": null,
-            "nextStepWhy": null
-        },
-        "tasksSource": null,
-        "tasksSummary": null,
-        "pendingTop": null
+    "tasksSource": null,
+    "tasksSummary": null,
+    "pendingTop": null
+  },
+  {
+    "id": 3,
+    "name": "Iron & Gears",
+    "status": "Active",
+    "theme": "amber",
+    "tech": "HTML/Tailwind",
+    "lastUpdate": "2026-01-10",
+    "description": "Ecommerce de refacciones industriales.",
+    "progressAssisted": 40,
+    "progressAuditable": null,
+    "assistedPhase": "Producción",
+    "assistedSignals": [
+      "Diseño UI base finalizado",
+      "Catálogo en carga de datos",
+      "Estructura Tailwind optimizada"
+    ],
+    "humanContext": {
+      "summary": "Tienda online de refacciones industriales. El diseño base ya está listo y se está cargando el catálogo de productos.",
+      "nextStep": null,
+      "nextStepWhy": null
     },
-    {
-        "id": 5,
-        "name": "Micropasos App",
-        "status": "Active",
-        "theme": "indigo",
-        "tech": "Next.js 14 / Supabase",
-        "lastUpdate": "2026-02-10",
-        "description": "Identity-based micro-habits tracker with Hero's Journey progression.",
-        "progressAssisted": 75,
-        "progressAuditable": 60.1,
-        "assistedPhase": "Producción",
-        "assistedSignals": [
-            "✅ FASE 2 Finalizada con Voces del Oráculo",
-            "🔮 Lógica de Séquito y Fragilidad activa",
-            "📈 Gestión de estados de identidad funcional"
-        ],
-        "humanContext": {
-            "summary": "App de hábitos diarios que te ayuda a cambiar poco a poco. Ya tiene dos fases completas y el sistema de progresión funciona.",
-            "nextStep": "Auth flows (reset/verify) + UX optimistic",
-            "nextStepWhy": "Sin esto, si alguien olvida su contraseña queda atrapado fuera de sus datos. Es básico para que la app sea usable."
-        },
-        "tasksSource": "../Micropasos App/micropasos---app/tasks.md",
-        "tasksSummary": {
-            "total": 208,
-            "done": 125,
-            "pending": 83
-        },
-        "pendingFocus": [
-            "Password reset/recovery flow",
-            "Email verification handling",
-            "Optimistic UI updates for better UX",
-            "Edit existing goals functionality",
-            "Delete goals functionality",
-            "Multiple goals support (currently only shows latest)",
-            "Goal archiving system",
-            "Completion history pagination",
-            "Data export functionality (JSON/CSV)",
-            "Undo completion functionality",
-            "Streak visualization (calendar heatmap)",
-            "Notifications system (browser push notifications)",
-            "Reminder customization (multiple reminders per day)",
-            "Custom hero stage messages (user-defined)",
-            "Notes/journal entries for each completion",
-            "Photo/media attachments for completions",
-            "Habit categories/tags",
-            "Multiple concurrent goals tracking",
-            "Dark mode support",
-            "Mobile-responsive navigation (hamburger menu)",
-            "Skeleton loaders for data fetching",
-            "Toast notifications for actions",
-            "Confirmation dialogs for destructive actions",
-            "Accessibility improvements (ARIA labels, keyboard navigation)",
-            "Empty states with helpful CTAs",
-            "Onboarding tutorial/walkthrough",
-            "Unit tests for utility functions",
-            "Integration tests for API routes",
-            "E2E tests for critical user flows",
-            "TypeScript strict mode enabled",
-            "ESLint configuration and fixes",
-            "Error logging and monitoring (e.g., Sentry)",
-            "Performance optimization (code splitting, lazy loading)",
-            "Production deployment setup",
-            "CI/CD pipeline",
-            "Database migrations system",
-            "Backup and recovery procedures",
-            "Environment-specific configurations",
-            "Monitoring and analytics",
-            "Rate limiting for API routes",
-            "Input sanitization and validation",
-            "CSRF protection",
-            "Rate limiting on auth endpoints",
-            "Secure headers configuration",
-            "SQL injection prevention audit",
-            "XSS prevention audit",
-            "**Modern Design System**",
-            "**Enhanced Door Metaphor**",
-            "**Dashboard Redesign**",
-            "**Achievement System**",
-            "**Social Features**",
-            "**Rewards System**",
-            "**Insights Dashboard**",
-            "**Reports**",
-            "**Smart Suggestions**",
-            "**Adaptive Difficulty**",
-            "**Mobile Apps**",
-            "**Browser Extension**",
-            "**Wearable Integration**",
-            "**Interactive Bot Commands**",
-            "**Rich Media Messages**",
-            "**Team Goals**",
-            "**Coach/Mentor Mode**",
-            "**Resource Library**",
-            "**Templates Marketplace**",
-            "Add hover states and transitions to all interactive elements",
-            "Implement toast notifications for user actions",
-            "Add loading spinners for async operations",
-            "Create empty state illustrations",
-            "Improve button hierarchy with size variations",
-            "Add subtle shadows and depth to cards",
-            "Implement dark mode with toggle",
-            "Add gradient accents and modern color palette",
-            "Create custom icons for navigation",
-            "Animate door opening/closing",
-            "Add progress animations",
-            "Implement skeleton loaders",
-            "Redesign dashboard with data visualization",
-            "Create custom illustrations for hero stages",
-            "Add micro-interactions throughout",
-            "Implement glassmorphism effects",
-            "Add sound effects (optional)",
-            "Create onboarding tutorial with animations"
-        ],
-        "owner": "Jorge Bonilla/IF&IF Studio 2026",
-        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\Micropasos App\\micropasos---app\\tasks.md"
+    "tasksSource": null,
+    "tasksSummary": null,
+    "pendingTop": null
+  },
+  {
+    "id": 4,
+    "name": "Chronos 1881",
+    "status": "Planning",
+    "theme": "orange",
+    "tech": "Godot/Supabase",
+    "lastUpdate": "2026-01-05",
+    "description": "RPG de viajes en el tiempo.",
+    "progressAssisted": 20,
+    "progressAuditable": null,
+    "assistedPhase": "Planeación",
+    "assistedSignals": [
+      "Definición de personajes en proceso",
+      "Prototipo de guardado funcional",
+      "Concept Art inicial terminado"
+    ],
+    "humanContext": {
+      "summary": "RPG de viajes en el tiempo, todavía en fase de planificación. Ya hay concept art y los personajes están definiéndose.",
+      "nextStep": null,
+      "nextStepWhy": null
     },
-    {
-        "id": 6,
-        "name": "Viajes Backend",
-        "status": "Active",
-        "theme": "slate",
-        "tech": "Node/Express/Supabase",
-        "lastUpdate": "2026-01-19",
-        "description": "Backend de la plataforma de viajes (PROG-016 Odisea Travel Platform). Provee API/DB para reservas, disponibilidad y operación.",
-        "progressAssisted": 70,
-        "progressAuditable": null,
-        "assistedPhase": "Integración",
-        "assistedSignals": [
-            "Endpoints de reserva seguros",
-            "Integración Supabase estable",
-            "Middleware de validación operativo"
-        ],
-        "humanContext": {
-            "summary": "Es el motor detrás de la plataforma de viajes. Maneja las reservas, la disponibilidad y la seguridad de los datos. El usuario no lo ve, pero sin él nada funciona.",
-            "nextStep": null,
-            "nextStepWhy": null
-        },
-        "tasksSource": null,
-        "tasksSummary": null,
-        "pendingTop": null
+    "tasksSource": null,
+    "tasksSummary": null,
+    "pendingTop": null
+  },
+  {
+    "id": 5,
+    "name": "Micropasos App",
+    "status": "Active",
+    "theme": "indigo",
+    "tech": "Next.js 14 / Supabase",
+    "lastUpdate": "2026-02-10",
+    "description": "Identity-based micro-habits tracker with Hero's Journey progression.",
+    "progressAssisted": 75,
+    "progressAuditable": 60.1,
+    "assistedPhase": "Producción",
+    "assistedSignals": [
+      "✅ FASE 2 Finalizada con Voces del Oráculo",
+      "🔮 Lógica de Séquito y Fragilidad activa",
+      "📈 Gestión de estados de identidad funcional"
+    ],
+    "humanContext": {
+      "summary": "App de hábitos diarios que te ayuda a cambiar poco a poco. Ya tiene dos fases completas y el sistema de progresión funciona.",
+      "nextStep": "Auth flows (reset/verify) + UX optimistic",
+      "nextStepWhy": "Sin esto, si alguien olvida su contraseña queda atrapado fuera de sus datos. Es básico para que la app sea usable."
     },
-    {
-        "id": 7,
-        "name": "The AI Project Hub",
-        "status": "Active",
-        "theme": "violet",
-        "tech": "React / Vite / Tailwind",
-        "lastUpdate": "2026-02-10",
-        "description": "Dashboard central de proyectos para el iPad del Usuario.",
-        "progressAssisted": 90,
-        "progressAuditable": 14.29,
-        "assistedPhase": "FASE 2 (Auditable 0%)",
-        "assistedSignals": [
-            "🌌 Estética Dark/Violet finalizada",
-            "🔍 Arquitectura de Doble Capa operativa",
-            "🔢 Sincronización determinista ESM activa"
-        ],
-        "humanContext": {
-            "summary": "Este mismo dashboard que estás viendo ahora. Ya funciona y se actualiza con npm run deploy cuando marcas tareas en otros proyectos.",
-            "nextStep": "Auto-deploy GitHub Actions + reglas anti-duplicados",
-            "nextStepWhy": "Para que realmente sea un Peace of Mind: entra, ves la realidad, sin hacer nada."
-        },
-        "tasksSource": "tasks.md",
-        "tasksSummary": {
-            "total": 7,
-            "done": 1,
-            "pending": 6
-        },
-        "pendingFocus": [
-            "Automatizar deploy a GitHub Pages con GitHub Actions",
-            "Validar workflow de deploy (Node 22 + Vite + dist)",
-            "Documentar política anti-duplicados de proyectos",
-            "Definir reglas formales de “qué es un proyecto” en el HUB",
-            "Afinar auto-discovery (carpetas vs proyectos reales)",
-            "Revisar y certificar tareas de UMBRA (P0 / P1)"
-        ],
-        "owner": "Jorge Bonilla/IF&IF Studio 2026",
-        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\The AI Projects Hub App\\tasks.md"
+    "tasksSource": "../Micropasos App/micropasos---app/tasks.md",
+    "tasksSummary": {
+      "total": 208,
+      "done": 125,
+      "pending": 83
     },
-    {
-        "id": 8,
-        "name": "Travel Booking UI",
-        "status": "Active",
-        "theme": "rose",
-        "tech": "HTML/CSS/JS + Tailwind",
-        "lastUpdate": "2026-01-20",
-        "description": "Frontend / Landing de reserva (PROG-016 Odisea Travel Platform). Consume API del Viajes Backend.",
-        "progressAssisted": 85,
-        "progressAuditable": null,
-        "assistedPhase": "Producción",
-        "assistedSignals": [
-            "UI Hero Section terminada",
-            "Integración de mapas establecida",
-            "Animaciones de transición fluidas"
-        ],
-        "humanContext": {
-            "summary": "La página web que los usuarios van a ver para hacer reservas de viajes. Ya tiene diseño, mapas y animaciones.",
-            "nextStep": null,
-            "nextStepWhy": null
-        },
-        "tasksSource": null,
-        "tasksSummary": null,
-        "pendingTop": null
+    "pendingFocus": [
+      "Password reset/recovery flow",
+      "Email verification handling",
+      "Optimistic UI updates for better UX",
+      "Edit existing goals functionality",
+      "Delete goals functionality",
+      "Multiple goals support (currently only shows latest)",
+      "Goal archiving system",
+      "Completion history pagination",
+      "Data export functionality (JSON/CSV)",
+      "Undo completion functionality",
+      "Streak visualization (calendar heatmap)",
+      "Notifications system (browser push notifications)",
+      "Reminder customization (multiple reminders per day)",
+      "Custom hero stage messages (user-defined)",
+      "Notes/journal entries for each completion",
+      "Photo/media attachments for completions",
+      "Habit categories/tags",
+      "Multiple concurrent goals tracking",
+      "Dark mode support",
+      "Mobile-responsive navigation (hamburger menu)",
+      "Skeleton loaders for data fetching",
+      "Toast notifications for actions",
+      "Confirmation dialogs for destructive actions",
+      "Accessibility improvements (ARIA labels, keyboard navigation)",
+      "Empty states with helpful CTAs",
+      "Onboarding tutorial/walkthrough",
+      "Unit tests for utility functions",
+      "Integration tests for API routes",
+      "E2E tests for critical user flows",
+      "TypeScript strict mode enabled",
+      "ESLint configuration and fixes",
+      "Error logging and monitoring (e.g., Sentry)",
+      "Performance optimization (code splitting, lazy loading)",
+      "Production deployment setup",
+      "CI/CD pipeline",
+      "Database migrations system",
+      "Backup and recovery procedures",
+      "Environment-specific configurations",
+      "Monitoring and analytics",
+      "Rate limiting for API routes",
+      "Input sanitization and validation",
+      "CSRF protection",
+      "Rate limiting on auth endpoints",
+      "Secure headers configuration",
+      "SQL injection prevention audit",
+      "XSS prevention audit",
+      "**Modern Design System**",
+      "**Enhanced Door Metaphor**",
+      "**Dashboard Redesign**",
+      "**Achievement System**",
+      "**Social Features**",
+      "**Rewards System**",
+      "**Insights Dashboard**",
+      "**Reports**",
+      "**Smart Suggestions**",
+      "**Adaptive Difficulty**",
+      "**Mobile Apps**",
+      "**Browser Extension**",
+      "**Wearable Integration**",
+      "**Interactive Bot Commands**",
+      "**Rich Media Messages**",
+      "**Team Goals**",
+      "**Coach/Mentor Mode**",
+      "**Resource Library**",
+      "**Templates Marketplace**",
+      "Add hover states and transitions to all interactive elements",
+      "Implement toast notifications for user actions",
+      "Add loading spinners for async operations",
+      "Create empty state illustrations",
+      "Improve button hierarchy with size variations",
+      "Add subtle shadows and depth to cards",
+      "Implement dark mode with toggle",
+      "Add gradient accents and modern color palette",
+      "Create custom icons for navigation",
+      "Animate door opening/closing",
+      "Add progress animations",
+      "Implement skeleton loaders",
+      "Redesign dashboard with data visualization",
+      "Create custom illustrations for hero stages",
+      "Add micro-interactions throughout",
+      "Implement glassmorphism effects",
+      "Add sound effects (optional)",
+      "Create onboarding tutorial with animations"
+    ],
+    "owner": "Jorge Bonilla/IF&IF Studio 2026",
+    "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\Micropasos App\\micropasos---app\\tasks.md"
+  },
+  {
+    "id": 6,
+    "name": "Viajes Backend",
+    "status": "Active",
+    "theme": "slate",
+    "tech": "Node/Express/Supabase",
+    "lastUpdate": "2026-01-19",
+    "description": "Backend de la plataforma de viajes (PROG-016 Odisea Travel Platform). Provee API/DB para reservas, disponibilidad y operación.",
+    "progressAssisted": 70,
+    "progressAuditable": null,
+    "assistedPhase": "Integración",
+    "assistedSignals": [
+      "Endpoints de reserva seguros",
+      "Integración Supabase estable",
+      "Middleware de validación operativo"
+    ],
+    "humanContext": {
+      "summary": "Es el motor detrás de la plataforma de viajes. Maneja las reservas, la disponibilidad y la seguridad de los datos. El usuario no lo ve, pero sin él nada funciona.",
+      "nextStep": null,
+      "nextStepWhy": null
     },
-    {
-        "id": 9,
-        "name": "RiddleSphere: Neon Challenge",
-        "status": "Active",
-        "theme": "neon",
-        "tech": "React 19 / TS / Tailwind",
-        "lastUpdate": "2026-01-21",
-        "description": "Futuristic Cyberpunk riddle platform for Street Games. High-contrast UI with CRT effects and neon glow.",
-        "progressAssisted": 65,
-        "progressAuditable": null,
-        "assistedPhase": "Integración",
-        "assistedSignals": [
-            "CRT Effect shader implementado",
-            "Supabase Auth activo",
-            "Lógica de acertijos aleatorios funcional"
-        ],
-        "humanContext": {
-            "summary": "Otra plataforma de acertijos, esta con estética cyberpunk y efectos neon. Ya tiene login y los acertijos se generan al azar.",
-            "nextStep": null,
-            "nextStepWhy": null
-        },
-        "tasksSource": null,
-        "tasksSummary": null,
-        "pendingTop": null
+    "tasksSource": null,
+    "tasksSummary": null,
+    "pendingTop": null
+  },
+  {
+    "id": 7,
+    "name": "The AI Project Hub",
+    "status": "Active",
+    "theme": "violet",
+    "tech": "React / Vite / Tailwind",
+    "lastUpdate": "2026-02-10",
+    "description": "Dashboard central de proyectos para el iPad del Usuario.",
+    "progressAssisted": 90,
+    "progressAuditable": 14.29,
+    "assistedPhase": "FASE 2 (Auditable 0%)",
+    "assistedSignals": [
+      "🌌 Estética Dark/Violet finalizada",
+      "🔍 Arquitectura de Doble Capa operativa",
+      "🔢 Sincronización determinista ESM activa"
+    ],
+    "humanContext": {
+      "summary": "Este mismo dashboard que estás viendo ahora. Ya funciona y se actualiza con npm run deploy cuando marcas tareas en otros proyectos.",
+      "nextStep": "Auto-deploy GitHub Actions + reglas anti-duplicados",
+      "nextStepWhy": "Para que realmente sea un Peace of Mind: entra, ves la realidad, sin hacer nada."
     },
-    {
-        "id": 10,
-        "name": "Agente Operativo: Arquitecto Silencioso",
-        "status": "Active",
-        "theme": "slate",
-        "tech": "Node / TS / Operative Architecture",
-        "lastUpdate": "2026-02-10",
-        "description": "Sistema de gestión de itinerarios con rigor determinista y validación dual (Planeación/Certificación).",
-        "progressAssisted": 50,
-        "progressAuditable": 100,
-        "assistedPhase": "Producción",
-        "assistedSignals": [
-            "🤫 Arquitectura de Silencio Operacional activa",
-            "🛡️ Motor de validación dual certificado",
-            "📂 Gestión descentralizada establecida"
-        ],
-        "humanContext": {
-            "summary": "Arquitectura de base de datos definida. El sistema usa un modelo híbrido: SQL para búsquedas rápidas (estado, fecha, ruta) y JSONB para la flexibilidad del itinerario complejo.",
-            "nextStep": "Implementar los Endpoints en Node.js para conectar esta base de datos con el Agente.",
-            "nextStepWhy": "Ahora que sabemos CÓMO guardar los datos, necesitamos el CÓDIGO que realmente los guarde y los lea."
-        },
-        "tasksSource": "../AgenteOperativo/tasks.md",
-        "tasksSummary": {
-            "total": 8,
-            "done": 8,
-            "pending": 0
-        },
-        "pendingFocus": [],
-        "owner": "Jorge Bonilla/IF&IF Studio 2026",
-        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\AgenteOperativo\\tasks.md"
+    "tasksSource": "tasks.md",
+    "tasksSummary": {
+      "total": 7,
+      "done": 1,
+      "pending": 6
     },
-    {
-        "id": 15,
-        "name": "UMBRA",
-        "status": "Planning",
-        "theme": "violet",
-        "tech": "TBD",
-        "lastUpdate": "2026-02-10",
-        "description": "Street Game iniciático en catedrales reales. Presencia física obligatoria.",
-        "owner": "Jorge Bonilla/IF&IF Studio 2026",
-        "progressAssisted": 10,
-        "progressAuditable": 20,
-        "assistedPhase": "P0 (definición)",
-        "assistedSignals": [
-            "✅ Proyecto autorizado en PROJECT_REGISTRY",
-            "📄 project.md definido con alcance P0",
-            "🎯 Primer paso: Creator Tool"
-        ],
-        "humanContext": {
-            "summary": "Un Street Game que ocurre en catedrales reales. El jugador tiene que estar físicamente ahí. No resuelve acertijos — atraviesa experiencias que cambian cómo percibe el espacio. Hay tensión que se acumula y un momento clímax al final. Tú eres el autor que diseña cada experiencia.",
-            "nextStep": "Creator Tool + onboarding + clímax",
-            "nextStepWhy": "Sin esta herramienta no puede avanzar nada más. Es el punto de partida de todo. Primero necesitas poder crear experiencias, después viene todo lo demás."
-        },
-        "tasksSource": "../UMBRA/tasks.md",
-        "tasksSummary": {
-            "total": 5,
-            "done": 1,
-            "pending": 4
-        },
-        "pendingFocus": [
-            "Definir alcance P0 (MVP) validado en sitio",
-            "Simular visita del autor con Creator Tool",
-            "Diseñar clímax lúdico inicial",
-            "Definir arquitectura técnica (backend autoritario)"
-        ],
-        "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\UMBRA\\tasks.md"
+    "pendingFocus": [
+      "Automatizar deploy a GitHub Pages con GitHub Actions",
+      "Validar workflow de deploy (Node 22 + Vite + dist)",
+      "Documentar política anti-duplicados de proyectos",
+      "Definir reglas formales de “qué es un proyecto” en el HUB",
+      "Afinar auto-discovery (carpetas vs proyectos reales)",
+      "Revisar y certificar tareas de UMBRA (P0 / P1)"
+    ],
+    "owner": "Jorge Bonilla/IF&IF Studio 2026",
+    "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\The AI Projects Hub App\\tasks.md"
+  },
+  {
+    "id": 8,
+    "name": "Travel Booking UI",
+    "status": "Active",
+    "theme": "rose",
+    "tech": "HTML/CSS/JS + Tailwind",
+    "lastUpdate": "2026-01-20",
+    "description": "Frontend / Landing de reserva (PROG-016 Odisea Travel Platform). Consume API del Viajes Backend.",
+    "progressAssisted": 85,
+    "progressAuditable": null,
+    "assistedPhase": "Producción",
+    "assistedSignals": [
+      "UI Hero Section terminada",
+      "Integración de mapas establecida",
+      "Animaciones de transición fluidas"
+    ],
+    "humanContext": {
+      "summary": "La página web que los usuarios van a ver para hacer reservas de viajes. Ya tiene diseño, mapas y animaciones.",
+      "nextStep": null,
+      "nextStepWhy": null
     },
-    {
-        "id": 16,
-        "name": "Odisea Travel Platform (UMBRELLA)",
-        "status": "Active",
-        "theme": "slate",
-        "tech": "TBD",
-        "lastUpdate": "2026-02-06",
-        "description": "No description.",
-        "progressAssisted": 0,
-        "progressAuditable": 0,
-        "assistedPhase": "Conceptualization",
-        "assistedSignals": [],
-        "humanContext": {
-            "summary": "",
-            "nextStep": "Initial setup",
-            "nextStepWhy": "New project registration."
-        },
-        "tasksSource": null,
-        "tasksSummary": {
-            "total": 0,
-            "done": 0,
-            "pending": 0
-        },
-        "pendingFocus": [],
-        "owner": "Jorge Bonilla/IF&IF Studio 2026"
+    "tasksSource": null,
+    "tasksSummary": null,
+    "pendingTop": null
+  },
+  {
+    "id": 9,
+    "name": "RiddleSphere: Neon Challenge",
+    "status": "Active",
+    "theme": "neon",
+    "tech": "React 19 / TS / Tailwind",
+    "lastUpdate": "2026-01-21",
+    "description": "Futuristic Cyberpunk riddle platform for Street Games. High-contrast UI with CRT effects and neon glow.",
+    "progressAssisted": 65,
+    "progressAuditable": null,
+    "assistedPhase": "Integración",
+    "assistedSignals": [
+      "CRT Effect shader implementado",
+      "Supabase Auth activo",
+      "Lógica de acertijos aleatorios funcional"
+    ],
+    "humanContext": {
+      "summary": "Otra plataforma de acertijos, esta con estética cyberpunk y efectos neon. Ya tiene login y los acertijos se generan al azar.",
+      "nextStep": null,
+      "nextStepWhy": null
     },
-    {
-        "id": 17,
-        "name": "Digital Health Sentinel",
-        "status": "Planning",
-        "theme": "slate",
-        "tech": "TBD",
-        "lastUpdate": "2026-02-06",
-        "description": "App de vigilancia de consumo digital y bienestar mental (Dieta de Contenido). Notificaciones vía Telegram.",
-        "progressAssisted": 0,
-        "progressAuditable": 0,
-        "assistedPhase": "P0 (Conceptualización)",
-        "assistedSignals": [],
-        "humanContext": {
-            "summary": "App de vigilancia de consumo digital y bienestar mental (Dieta de Contenido). Notificaciones vía Telegram.",
-            "nextStep": "Solo registro inicial. Prioridad BAJA.",
-            "nextStepWhy": "New project registration."
-        },
-        "tasksSource": "../Digital-Health-Sentinel/tasks.md",
-        "tasksSummary": {
-            "total": 0,
-            "done": 0,
-            "pending": 0
-        },
-        "pendingFocus": [],
-        "owner": "Jorge Bonilla/IF&IF Studio 2026"
-    }
+    "tasksSource": null,
+    "tasksSummary": null,
+    "pendingTop": null
+  },
+  {
+    "id": 10,
+    "name": "Agente Operativo: Arquitecto Silencioso",
+    "status": "Active",
+    "theme": "slate",
+    "tech": "Node / TS / Operative Architecture",
+    "lastUpdate": "2026-02-10",
+    "description": "Sistema de gestión de itinerarios con rigor determinista y validación dual (Planeación/Certificación).",
+    "progressAssisted": 50,
+    "progressAuditable": 100,
+    "assistedPhase": "Producción",
+    "assistedSignals": [
+      "🤫 Arquitectura de Silencio Operacional activa",
+      "🛡️ Motor de validación dual certificado",
+      "📂 Gestión descentralizada establecida"
+    ],
+    "humanContext": {
+      "summary": "Arquitectura de base de datos definida. El sistema usa un modelo híbrido: SQL para búsquedas rápidas (estado, fecha, ruta) y JSONB para la flexibilidad del itinerario complejo.",
+      "nextStep": "Implementar los Endpoints en Node.js para conectar esta base de datos con el Agente.",
+      "nextStepWhy": "Ahora que sabemos CÓMO guardar los datos, necesitamos el CÓDIGO que realmente los guarde y los lea."
+    },
+    "tasksSource": "../AgenteOperativo/tasks.md",
+    "tasksSummary": {
+      "total": 8,
+      "done": 8,
+      "pending": 0
+    },
+    "pendingFocus": [],
+    "owner": "Jorge Bonilla/IF&IF Studio 2026",
+    "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\AgenteOperativo\\tasks.md"
+  },
+  {
+    "id": 15,
+    "name": "UMBRA (paraguas)",
+    "status": "Active",
+    "theme": "violet",
+    "tech": "TBD",
+    "lastUpdate": "2026-08-01",
+    "description": "Street game iniciatico en catedrales, parques y calles, para FAMILIAS de 3-4. Presencia fisica obligatoria, anti-IA por diseno. Componentes: TOOL-018 (Creator Tool) y TOOL-019 (AR).",
+    "owner": "Jorge Bonilla/IF&IF Studio 2026",
+    "progressAssisted": 10,
+    "progressAuditable": 20,
+    "assistedPhase": "P1",
+    "assistedSignals": [
+      "✅ Proyecto autorizado en PROJECT_REGISTRY",
+      "📄 project.md definido con alcance P0",
+      "🎯 Primer paso: Creator Tool"
+    ],
+    "humanContext": "Paraguas. El trabajo real esta en TOOL-018 y TOOL-019.",
+    "tasksSource": "../UMBRA/tasks.md",
+    "tasksSummary": {
+      "total": 5,
+      "done": 1,
+      "pending": 4
+    },
+    "pendingFocus": "Ver TOOL-019: ARCore no sigue el movimiento (6 m reales = 0,7 m medidos).",
+    "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\UMBRA\\tasks.md"
+  },
+  {
+    "id": 16,
+    "name": "Odisea Travel Platform (UMBRELLA)",
+    "status": "Active",
+    "theme": "slate",
+    "tech": "TBD",
+    "lastUpdate": "2026-02-06",
+    "description": "No description.",
+    "progressAssisted": 0,
+    "progressAuditable": 0,
+    "assistedPhase": "Conceptualization",
+    "assistedSignals": [],
+    "humanContext": {
+      "summary": "",
+      "nextStep": "Initial setup",
+      "nextStepWhy": "New project registration."
+    },
+    "tasksSource": null,
+    "tasksSummary": {
+      "total": 0,
+      "done": 0,
+      "pending": 0
+    },
+    "pendingFocus": [],
+    "owner": "Jorge Bonilla/IF&IF Studio 2026"
+  },
+  {
+    "id": 17,
+    "name": "Digital Health Sentinel",
+    "status": "Planning",
+    "theme": "slate",
+    "tech": "TBD",
+    "lastUpdate": "2026-02-06",
+    "description": "App de vigilancia de consumo digital y bienestar mental (Dieta de Contenido). Notificaciones vía Telegram.",
+    "progressAssisted": 0,
+    "progressAuditable": 0,
+    "assistedPhase": "P0 (Conceptualización)",
+    "assistedSignals": [],
+    "humanContext": {
+      "summary": "App de vigilancia de consumo digital y bienestar mental (Dieta de Contenido). Notificaciones vía Telegram.",
+      "nextStep": "Solo registro inicial. Prioridad BAJA.",
+      "nextStepWhy": "New project registration."
+    },
+    "tasksSource": "../Digital-Health-Sentinel/tasks.md",
+    "tasksSummary": {
+      "total": 0,
+      "done": 0,
+      "pending": 0
+    },
+    "pendingFocus": [],
+    "owner": "Jorge Bonilla/IF&IF Studio 2026"
+  },
+  {
+    "id": 18,
+    "name": "UMBRA Creator Tool",
+    "status": "Active",
+    "theme": "violet",
+    "tech": "Next.js 14 / Supabase / Dexie / Leaflet",
+    "lastUpdate": "2026-08-01",
+    "description": "Herramienta de autor de UMBRA. Next.js + Supabase + Dexie. Arco de 8 etapas, 12 maquinas y validador implementados. Arranca en el puerto 3100.",
+    "owner": "Jorge Bonilla/IF&IF Studio 2026",
+    "progressAssisted": 65,
+    "progressAuditable": 60,
+    "assistedPhase": "P1",
+    "assistedSignals": [
+      "✅ Proyecto autorizado en PROJECT_REGISTRY",
+      "📄 project.md definido con alcance P0",
+      "🎯 Primer paso: Creator Tool"
+    ],
+    "humanContext": "Herramienta de autor de UMBRA. Next.js + Supabase + Dexie. Arco de 8 etapas, 12 maquinas y validador implementados. Arranca en el puerto 3100.",
+    "tasksSource": "../UMBRA/tasks.md",
+    "tasksSummary": "Hecho: renombrado a Labyrinthos, 12 maquinas, validador, curva emocional, login y RLS. Pendiente: anclas, ContentDB, Collection Box a nivel de sede.",
+    "pendingFocus": "Pantalla de anclas metricas y fusion por capas con tt-creator-tool.",
+    "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\UMBRA\\tasks.md"
+  },
+  {
+    "id": 19,
+    "name": "UMBRA AR (Godot/WebXR)",
+    "status": "Active",
+    "theme": "violet",
+    "tech": "Godot 4.6.3 / WebXR / ARCore",
+    "lastUpdate": "2026-08-01",
+    "description": "Realidad aumentada real por WebXR/ARCore. Calibracion por 4 referencias medidas con laser. Publicado en lelegion.com/v10. Repo PRIVADO: el hub no puede leerlo.",
+    "owner": "Jorge Bonilla/IF&IF Studio 2026",
+    "progressAssisted": 45,
+    "progressAuditable": 40,
+    "assistedPhase": "P1",
+    "assistedSignals": [
+      "✅ Proyecto autorizado en PROJECT_REGISTRY",
+      "📄 project.md definido con alcance P0",
+      "🎯 Primer paso: Creator Tool"
+    ],
+    "humanContext": "Realidad aumentada real por WebXR/ARCore. Calibracion por 4 referencias medidas con laser. Publicado en lelegion.com/v10. Repo PRIVADO: el hub no puede leerlo.",
+    "tasksSource": "../UMBRA/tasks.md",
+    "tasksSummary": "Hecho: AR real verificado, calibracion Umeyama con 4 pruebas, registro de intentos. Pendiente: diagnostico del tracking y medir el error real.",
+    "pendingFocus": "BLOQUEANTE: ARCore no sigue el movimiento. 6 m reales = 0,7 m medidos.",
+    "tasksSourceResolved": "C:\\Users\\illus\\PROYECTOS_IA_MASTER\\UMBRA\\tasks.md"
+  }
 ]
