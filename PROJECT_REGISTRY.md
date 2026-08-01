@@ -12,8 +12,9 @@ Owner: Jorge Bonilla / IF&IF Studio 2026
   resuelve ver que queda pendiente. Un sistema de memoria no puede depender
   de que el usuario recuerde alimentarlo.
 
-## GAME-015 — UMBRA (ID 15)
-- repoFolder: tt-creator-tool-pwa
+## GAME-015 — UMBRA (ID 15) — UMBRELLA
+- repoFolder: (paraguas, sin repo propio)
+- componentes: TOOL-018 (Creator Tool) · TOOL-019 (AR)
 - repos: Kinnard77/tt-creator-tool-pwa (Creator Tool) · Kinnard77/umbra-ar-godot (AR, privado)
 - status: Active
 - phase: P1 (arquitectura cerrada, validación de precisión en curso)
@@ -23,6 +24,37 @@ Owner: Jorge Bonilla / IF&IF Studio 2026
 - diseño: ver carpeta `diseno/` en tt-creator-tool-pwa (5 documentos)
 - decidido: se juega en FAMILIAS de 3-4 · 12 máquinas · arco de 8 etapas · 5 ciclos = etapas II-VI
 - notes: Nace del chat Pantheon/Catedrales. Presencia obligatoria. Anti-IA por diseño.
+
+## TOOL-018 — UMBRA Creator Tool (ID 18)
+- padre: GAME-015 (UMBRA)
+- repo: Kinnard77/tt-creator-tool-pwa (público)
+- repoFolder: PROYECTOS_IA_MASTER	t-creator-tool-pwa
+- status: Active
+- phase: P1 — arco y validador implementados; falta la capa de anclas
+- tech: Next.js 14 + Supabase + Dexie (offline-first) + Leaflet
+- arranque: `npm run dev` → puerto 3100 (el 3000 es de la herramienta antigua)
+- focusNow: pantalla de anclas, y fusión por capas con tt-creator-tool
+- hecho: renombrado a Labyrinthos · 12 máquinas y arco de 8 etapas · validador
+  · curva emocional · login y RLS · registro con media y peor caso
+- tareas: `tasks.md` del repo · diseño en `diseno/` (5 documentos)
+- notes: Herramienta de autor, solo la usa Jorge. Produce el JSON que consume
+  el cliente de Godot. NO tocar la Data Collection Box hasta que Jorge haga
+  su comparativa con los POIs.
+
+## TOOL-019 — UMBRA AR (Godot/WebXR) (ID 19)
+- padre: GAME-015 (UMBRA)
+- repo: Kinnard77/umbra-ar-godot (PRIVADO — el hub no puede leerlo)
+- repoFolder: ClaudeCoder-godot
+- status: Active
+- phase: P1 — bloqueado en validación de precisión
+- tech: Godot 4.6.3 · WebXR/ARCore · exportación Web
+- publicado: lelegion.com/v10 (topógrafo) · lelegion.com/catedral
+- focusNow: **BLOQUEANTE** — ARCore no sigue el movimiento (6 m reales = 0,7 m)
+- hecho: AR real verificado en dispositivo · calibración por 4 referencias
+  (Umeyama) con 4 pruebas numéricas · registro de intentos
+- notes: Al ser privado, su estado debe mantenerse aquí a mano. Reglas de
+  trabajo y los 12 fallos resueltos en `diseno/ESTADO_AR_TRASPASO.md` del
+  repo de la Creator Tool.
 
 ## APP-005 — Micropasos App (ID 5)
 - repoFolder: Micropasos App/micropasos---app
