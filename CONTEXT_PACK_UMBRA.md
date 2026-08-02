@@ -9,6 +9,32 @@ Proyecto: **GAME-015 — UMBRA**. Street game iniciático en catedrales,
 parques y calles, para **familias de 3-4 personas**. Presencia física
 obligatoria, anti-IA por diseño.
 
+## PRIORIDAD AHORA: la Creator Tool (TOOL-018)
+
+**El trabajo está en la Creator Tool, no en el AR.** Queda muchísimo por
+hacer ahí y es donde Jorge quiere avanzar.
+
+El asunto del tracking de ARCore **está aparcado a propósito**. Se sabe lo
+que hay que hacer (caminar 25 m mirando el estado que ya muestra la v26) y
+Jorge lo hará cuando le venga bien. **No convertirlo en el tema del chat ni
+proponer volver a construir la pantalla de diagnóstico: ya existe.**
+
+Lo siguiente en la Creator Tool, por orden:
+1. **Fusión por capas**: trasplantar a UMBRA el offline-first con Dexie, la
+   ficha completa de POI, el esquema con autenticación y el export, todo
+   desde `tt-creator-tool`. Sin esto, el trabajo de campo en una catedral se
+   pierde en cuanto no hay señal.
+2. **Collection Box a nivel de Labyrinthos**, no solo por umbral: hay saber
+   que no pertenece a ningún punto (el Tetramorfo son 4 ubicaciones y un
+   símbolo). La estructura de la tabla ya lo admite; falta la pantalla.
+3. **Etiquetas y enlaces** entre entradas (copiar `ct_links`).
+4. **Modo GamePlayer**: ver cada umbral como lo verá el jugador.
+5. **Interfaz para `estado_inicial` y `estado_final`** del Labyrinthos: las
+   columnas existen en la base de datos, la pantalla no.
+
+**NO TOCAR** la Data Collection Box ni los POIs hasta que Jorge haga su
+comparativa. Lo pidió expresamente.
+
 ## Antes de nada, lee esto
 
 Ruta completa en disco:
