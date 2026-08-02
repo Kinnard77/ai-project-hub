@@ -11,7 +11,12 @@ obligatoria, anti-IA por diseño.
 
 ## Antes de nada, lee esto
 
-En `Kinnard77/tt-creator-tool-pwa`, carpeta `diseno/`:
+Ruta completa en disco:
+`C:\Users\illus\PROYECTOS_IA_MASTER\tt-creator-tool-pwa\diseno\`
+En GitHub: `github.com/Kinnard77/tt-creator-tool-pwa/tree/main/diseno`
+
+(La ruta relativa `diseno/...` solo funciona si el directorio de trabajo
+es el del repositorio. Usar siempre la ruta completa.)
 
 - **ESTADO_AR_TRASPASO.md** — el problema abierto, lo descartado y por qué,
   los 12 fallos ya resueltos con su causa real. **Empezar por aquí.**
