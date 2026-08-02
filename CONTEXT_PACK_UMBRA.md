@@ -39,6 +39,21 @@ UMBRA es el juego · **Labyrinthos** la sede (catedral, parque, calle) ·
 **BLOQUEANTE**: ARCore no sigue el movimiento. Caminando 6 m reales, la app
 reporta 0,7 m. Sin resolver esto, ninguna medida de precisión vale.
 
+**Versión actual: v26**, publicada en `lelegion.com/v10` (la carpeta se llama
+v10 por historia; la versión va en el botón "INICIAR AR · v26").
+
+**Medida de campo del 1 de agosto**: 26,20 m reales → 2,7 m reportados.
+Pero **en corto el tracking funciona**: volviendo sobre sus pasos, las marcas
+seguían donde las puso. El fallo aparece al alejarse, no por movimiento
+brusco. La deriva vertical está confirmada y ya corregida (las marcas van
+1,35 m por debajo de la cámara, no en el plano y=0 que deriva).
+
+**SIGUIENTE PASO CONCRETO**: la v26 muestra el estado del tracking siempre
+entre corchetes — `[OK]`, `[PERDIDO]`, `[SIN TEXTURA]`, `[MOVIMIENTO]`.
+Pedirle a Jorge que **camine 25 m mirando ese corchete** y diga qué pone al
+llegar. Si dice PERDIDO o SIN TEXTURA, ARCore deja de ver. Si dice OK y aun
+así cuenta 2,7 m, el problema es otro y mucho más raro.
+
 **Ya construido para diagnosticarlo (v17)**: con el botón del medio, *antes*
 de iniciar AR, se activa el modo diagnóstico. Muestra en vivo el estado del
 tracking, la posición cruda de la cámara, la distancia en línea recta desde
@@ -53,7 +68,12 @@ problema es de rendimiento.
 
 ## Reglas de trabajo que costaron horas
 
-- **Marcar la versión en pantalla** (el botón dice "INICIAR AR · v16").
+- **Marcar la versión en pantalla** (el botón dice "INICIAR AR · v26").
+- **Los tamaños de botones y letras están BIEN. No tocarlos.**
+- Colocar controles con **anclajes proporcionales, nunca píxeles**: al entrar
+  en AR cambia el lienzo y los textos se salen de la pantalla.
+- **Guardar en el almacén del navegador**, no en `user://`: Godot no lo
+  sincroniza al cerrar la pestaña y se pierde el levantamiento.
 - **No tocar los tamaños de botones y letras**: están perfectos desde v14.
 - **Publicar en carpeta versionada** (`/v10/`): una carpeta nueva no tiene caché.
 - **Solo se sube `index.pck`** (3 MB). El `.wasm` son 37 MB y no cambia.
