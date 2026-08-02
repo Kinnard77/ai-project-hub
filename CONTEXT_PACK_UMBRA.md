@@ -9,6 +9,9 @@ Proyecto: **GAME-015 — UMBRA**. Street game iniciático en catedrales,
 parques y calles, para **familias de 3-4 personas**. Presencia física
 obligatoria, anti-IA por diseño.
 
+> **Este pack es SOLO para la Creator Tool.** La realidad aumentada tiene su
+> propio chat y su propio pack: `CONTEXT_PACK_UMBRA_AR.md`. No mezclar.
+
 ## PRIORIDAD AHORA: la Creator Tool (TOOL-018)
 
 **El trabajo está en la Creator Tool, no en el AR.** Queda muchísimo por
